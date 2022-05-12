@@ -394,7 +394,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.16, y: -0.005}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -405,7 +405,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.34, y: 0.17}
+  m_Size: {x: 0.66, y: 0.16}
   m_EdgeRadius: 0
 --- !u!212 &152527717
 SpriteRenderer:
@@ -485,7 +485,7 @@ GameObject:
   - component: {fileID: 157034443}
   - component: {fileID: 157034442}
   - component: {fileID: 157034441}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: rousette2_21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1374,6 +1374,26 @@ PrefabInstance:
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
+    - target: {fileID: 5800000, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
+      propertyPath: m_Radius
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
+    - target: {fileID: 5800000, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
       propertyPath: m_PlatformsLayer
@@ -3264,7 +3284,7 @@ GameObject:
   - component: {fileID: 1103812504}
   - component: {fileID: 1103812503}
   - component: {fileID: 1103812502}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Idle (32x32)_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3486,7 +3506,7 @@ GameObject:
   - component: {fileID: 1242584052}
   - component: {fileID: 1242584051}
   - component: {fileID: 1242584050}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4129,7 +4149,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.36, y: 0.19}
+  m_Size: {x: 0.36, y: 0.16}
   m_EdgeRadius: 0
 --- !u!212 &1433194433
 SpriteRenderer:
@@ -4209,7 +4229,7 @@ GameObject:
   - component: {fileID: 1434306520}
   - component: {fileID: 1434306519}
   - component: {fileID: 1434306521}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Idle (32x32)_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}

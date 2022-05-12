@@ -45,6 +45,7 @@ namespace UnityStandardAssets._2D
 			{
 				if (colliders[i].gameObject != gameObject)
 				{
+					Debug.Log("grounded");
 					m_Grounded = true;
 					//move player with platform by setting the platform as parent
 					if (colliders[i].gameObject.layer==LayerMask.NameToLayer(m_PlatformsLayer))
