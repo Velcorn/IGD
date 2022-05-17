@@ -22,7 +22,6 @@ namespace UnityStandardAssets._2D
 		private Rigidbody2D m_Rigidbody2D;
 		private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 
-
 		private void Awake()
 		{
 			// Setting up references.
@@ -38,6 +37,16 @@ namespace UnityStandardAssets._2D
 			m_Grounded = false;
 			transform.parent = null;
 
+			//ignore collision with moving platforms if moving up
+			if(m_Rigidbody2D.velocity.y>0){
+				Physics2D.IgnoreLayerCollision(gameObject.layer,LayerMask.NameToLayer(m_PlatformsLayer), true); 
+			}
+			else
+			{
+				Physics2D.IgnoreLayerCollision(gameObject.layer,LayerMask.NameToLayer(m_PlatformsLayer), false);
+			}
+
+
 			// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
 			// This can be done using layers instead but Sample Assets will not overwrite your project settings.
 			Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
@@ -45,7 +54,6 @@ namespace UnityStandardAssets._2D
 			{
 				if (colliders[i].gameObject != gameObject)
 				{
-					Debug.Log("grounded");
 					m_Grounded = true;
 					//move player with platform by setting the platform as parent
 					if (colliders[i].gameObject.layer==LayerMask.NameToLayer(m_PlatformsLayer))
