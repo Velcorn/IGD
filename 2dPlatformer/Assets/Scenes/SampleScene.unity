@@ -27566,6 +27566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: woodbar2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1122735946870461060, guid: f2eb97b5deb132548a74d848f30adec5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1122735946870461062, guid: f2eb97b5deb132548a74d848f30adec5, type: 3}
       propertyPath: m_RootOrder
       value: 13
