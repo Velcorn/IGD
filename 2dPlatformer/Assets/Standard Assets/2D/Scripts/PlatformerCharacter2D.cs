@@ -21,6 +21,9 @@ namespace UnityStandardAssets._2D
 		private Animator m_Anim;            // Reference to the player's animator component.
 		private Rigidbody2D m_Rigidbody2D;
 		private bool m_FacingRight = true;  // For determining which way the player is currently facing.
+		private bool overlap = false;
+		private BoxCollider2D boxCollider;
+
 
 		private void Awake()
 		{
@@ -29,23 +32,34 @@ namespace UnityStandardAssets._2D
 			m_CeilingCheck = transform.Find("CeilingCheck");
 			m_Anim = GetComponent<Animator>();
 			m_Rigidbody2D = GetComponent<Rigidbody2D>();
+			boxCollider = GetComponent<BoxCollider2D>();
+		}
+
+		private void OnTriggerEnter2D(Collider2D collider){
+			if(collider.gameObject.layer==LayerMask.NameToLayer(m_PlatformsLayer)){
+				overlap = true;
+			}
+		}
+
+		private void OnTriggerExit2D(Collider2D collider){
+			overlap = false;
 		}
 
 
 		private void FixedUpdate()
 		{
+
 			m_Grounded = false;
 			transform.parent = null;
 
-			//ignore collision with moving platforms if moving up
-			if(m_Rigidbody2D.velocity.y>0){
-				Physics2D.IgnoreLayerCollision(gameObject.layer,LayerMask.NameToLayer(m_PlatformsLayer), true); 
-			}
-			else
-			{
-				Physics2D.IgnoreLayerCollision(gameObject.layer,LayerMask.NameToLayer(m_PlatformsLayer), false);
+			//disable player collider if moving up and colliding with a platform
+			if(m_Rigidbody2D.velocity.y>0 && overlap){
+				boxCollider.enabled = false;
 			}
 
+			else if(!overlap){
+				boxCollider.enabled = true;
+			}
 
 			// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
 			// This can be done using layers instead but Sample Assets will not overwrite your project settings.
