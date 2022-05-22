@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1476316897330158353}
   - component: {fileID: 1476316897330158354}
-  - component: {fileID: 1476316897330158355}
+  - component: {fileID: 8803573206088639548}
   m_Layer: 3
   m_Name: rockspike (1)
   m_TagString: Untagged
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1476316897330158364}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.32, y: 31.57, z: 0}
-  m_LocalScale: {x: 5.5, y: 5.5, z: 5.5}
+  m_LocalScale: {x: 5.5, y: 5.5000005, z: 5.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1476316897330158355
-BoxCollider2D:
+--- !u!60 &8803573206088639548
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -108,6 +108,10 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.82, y: 0.32}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.39999998, y: 0.16}
+      - {x: -0.39999998, y: -0.16}
+      - {x: -0.06, y: -0.15}
+      - {x: 0.39999998, y: 0.11}
+      - {x: 0.39999998, y: 0.16}

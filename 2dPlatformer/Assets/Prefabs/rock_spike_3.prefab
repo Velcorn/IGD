@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8457241814514842861}
   - component: {fileID: 5712653355070682173}
-  - component: {fileID: 2733872232064037320}
+  - component: {fileID: 7849012409447540042}
   m_Layer: 3
   m_Name: rock_spike_3
   m_TagString: Untagged
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 5748467789846075761}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -22.58, y: 93.39, z: 0}
-  m_LocalScale: {x: 5.2050505, y: 4.0652857, z: 1}
+  m_LocalScale: {x: 5.205051, y: 4.0652857, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2733872232064037320
-BoxCollider2D:
+--- !u!60 &7849012409447540042
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -108,6 +108,11 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.55, y: 0.48}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.27, y: 0.24}
+      - {x: -0.01, y: 0.2}
+      - {x: -0.07, y: 0.15}
+      - {x: -0.275, y: 0.14}
+      - {x: -0.275, y: 0.03}
+      - {x: 0.27, y: -0.24}

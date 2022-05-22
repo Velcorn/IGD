@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3692520314129659926}
   - component: {fileID: 9097185640731564246}
-  - component: {fileID: 6051377533565574758}
+  - component: {fileID: 6673898297202869873}
   m_Layer: 3
   m_Name: Felsgebirge2
   m_TagString: Untagged
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 4659502309606291884}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 21.84, y: 57.41, z: 0}
-  m_LocalScale: {x: 3.8493133, y: 3.8071, z: 1}
+  m_LocalScale: {x: 3.8493137, y: 3.8071003, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -1399049748, guid: 527d271e3ba3f9843ba89bf17ea61f2d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 3.02, y: 1.83}
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6051377533565574758
-BoxCollider2D:
+--- !u!60 &6673898297202869873
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -108,6 +108,15 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.02, y: 1.83}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.52, y: 0.53}
+      - {x: 1.24, y: 0.05}
+      - {x: 0.85, y: 0.12}
+      - {x: 0.65, y: -0.91}
+      - {x: -0.11, y: -0.91}
+      - {x: -0.79, y: -0.22}
+      - {x: -0.84, y: 0.04}
+      - {x: -1.55, y: 0.515}
+      - {x: -1.56, y: 0.91}
+      - {x: 1.41, y: 0.89}
