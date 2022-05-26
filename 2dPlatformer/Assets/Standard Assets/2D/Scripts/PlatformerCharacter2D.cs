@@ -12,6 +12,7 @@ namespace UnityStandardAssets._2D
 		[SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
 		[SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
 		[SerializeField] private string m_PlatformsLayer;  
+		[SerializeField] private string m_CharactersLayer;  
 
 		private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
 		const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
@@ -22,6 +23,7 @@ namespace UnityStandardAssets._2D
 		private Rigidbody2D m_Rigidbody2D;
 		private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 		private bool overlap = false;
+		private bool overlapCharacter = false;
 		private BoxCollider2D boxCollider;
 
 
@@ -39,10 +41,14 @@ namespace UnityStandardAssets._2D
 			if(collider.gameObject.layer==LayerMask.NameToLayer(m_PlatformsLayer)){
 				overlap = true;
 			}
+			if(collider.gameObject.layer==LayerMask.NameToLayer(m_CharactersLayer)){
+				overlapCharacter = true;
+			}
 		}
 
 		private void OnTriggerExit2D(Collider2D collider){
 			overlap = false;
+			overlapCharacter = false;
 		}
 
 
@@ -147,5 +153,16 @@ namespace UnityStandardAssets._2D
 			theScale.x *= -1;
 			transform.localScale = theScale;
 		}
+
+		public void Interact()
+		{
+			// If crouching, check to see if the character can stand up
+			if (overlapCharacter)
+			{
+				Debug.Log("interaction");
+			}
+		}
+
+
 	}
 }
