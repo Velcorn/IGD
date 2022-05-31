@@ -2481,6 +2481,7 @@ GameObject:
   - component: {fileID: 157034443}
   - component: {fileID: 157034442}
   - component: {fileID: 157034441}
+  - component: {fileID: 157034444}
   m_Layer: 7
   m_Name: rousette2_21
   m_TagString: Untagged
@@ -2581,6 +2582,20 @@ Transform:
   m_Father: {fileID: 1075604141}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &157034444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157034440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentences:
+  - You won't succeed
 --- !u!1 &174037169
 GameObject:
   m_ObjectHideFlags: 0
@@ -6670,6 +6685,10 @@ PrefabInstance:
     - target: {fileID: 6100000, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
       propertyPath: m_Offset.y
       value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
+      propertyPath: m_JumpForce
+      value: 830
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
       propertyPath: m_PlatformsLayer
@@ -15874,6 +15893,7 @@ GameObject:
   - component: {fileID: 1207828789}
   - component: {fileID: 1207828788}
   - component: {fileID: 1207828787}
+  - component: {fileID: 1207828790}
   m_Layer: 7
   m_Name: Idle (32x32)_0
   m_TagString: Untagged
@@ -15994,6 +16014,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1207828790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207828785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentences:
+  - 'Hey you! Answer my Question! Serious mental illness cost America how much in
+    lost revenue each year?     a) 20.7 Million     b) 1.53 Billion     c) 193.2
+    Billion     d) 418.14 Billion   '
 --- !u!1 &1212670096
 GameObject:
   m_ObjectHideFlags: 0
@@ -16468,7 +16504,8 @@ GameObject:
   - component: {fileID: 1242584052}
   - component: {fileID: 1242584051}
   - component: {fileID: 1242584050}
-  m_Layer: 3
+  - component: {fileID: 1242584053}
+  m_Layer: 7
   m_Name: Idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16568,6 +16605,20 @@ Transform:
   m_Father: {fileID: 1075604141}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1242584053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242584049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentences:
+  - Almost $200 billion is a lot of money!
 --- !u!1001 &1254147787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19336,8 +19387,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - Hello I am the Mask Guy
+  - Hello I am the Mask Guy.
   - who are you?
+  - Alright! Welcome to the Downearth.
+  - Your mission is to escape from here.
+  - But being skilled is not enough. You always have to be alert and pay attention
+    to hints.
+  - Now let's go!
 --- !u!4 &1439530627
 Transform:
   m_ObjectHideFlags: 0
