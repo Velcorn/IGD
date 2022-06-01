@@ -1,5 +1,7 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 #pragma warning disable 649
 namespace UnityStandardAssets._2D
@@ -12,6 +14,7 @@ namespace UnityStandardAssets._2D
 		[SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
 		[SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
 		[SerializeField] private string m_PlatformsLayer;  
+		[SerializeField] private string m_CharactersLayer;  
 
 		private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
 		const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
@@ -21,9 +24,13 @@ namespace UnityStandardAssets._2D
 		private Animator m_Anim;            // Reference to the player's animator component.
 		private Rigidbody2D m_Rigidbody2D;
 		private bool m_FacingRight = true;  // For determining which way the player is currently facing.
-		private bool overlap = false;
+		private bool overlapPlatform = false;
+		private string overlapCharacter = "";
 		private BoxCollider2D boxCollider;
-
+		private UnityEngine.UI.Image bubbleBackgroundImage;
+						
+		private	TextMeshProUGUI bubbleTextMesh;
+		private int speechBubbleCounter;
 
 		private void Awake()
 		{
@@ -33,16 +40,32 @@ namespace UnityStandardAssets._2D
 			m_Anim = GetComponent<Animator>();
 			m_Rigidbody2D = GetComponent<Rigidbody2D>();
 			boxCollider = GetComponent<BoxCollider2D>();
+
+			GameObject speechBubbleBackground = GameObject.Find("SpeechBubbleBackground");
+			bubbleBackgroundImage = speechBubbleBackground.GetComponent<UnityEngine.UI.Image>();
+			bubbleBackgroundImage.enabled = false;
+
+			GameObject speechBubbleText = GameObject.Find("SpeechBubbleText");
+			bubbleTextMesh = speechBubbleText.GetComponent<TextMeshProUGUI>();
+			bubbleTextMesh.enabled = false;
 		}
 
 		private void OnTriggerEnter2D(Collider2D collider){
 			if(collider.gameObject.layer==LayerMask.NameToLayer(m_PlatformsLayer)){
-				overlap = true;
+				overlapPlatform = true;
+			}
+			if(collider.gameObject.layer==LayerMask.NameToLayer(m_CharactersLayer)){
+				overlapCharacter = collider.gameObject.name;
+				speechBubbleCounter=0;
 			}
 		}
 
 		private void OnTriggerExit2D(Collider2D collider){
-			overlap = false;
+			overlapPlatform = false;
+			overlapCharacter = "";
+			bubbleBackgroundImage.enabled = false;
+			bubbleTextMesh.enabled = false;
+			speechBubbleCounter=0;
 		}
 
 
@@ -53,11 +76,11 @@ namespace UnityStandardAssets._2D
 			transform.parent = null;
 
 			//disable player collider if moving up and colliding with a platform
-			if(m_Rigidbody2D.velocity.y>0 && overlap){
+			if(m_Rigidbody2D.velocity.y>0 && overlapPlatform){
 				boxCollider.enabled = false;
 			}
 
-			else if(!overlap){
+			else if(!overlapPlatform){
 				boxCollider.enabled = true;
 			}
 
@@ -147,5 +170,30 @@ namespace UnityStandardAssets._2D
 			theScale.x *= -1;
 			transform.localScale = theScale;
 		}
+
+		public void Interact()
+		{
+			if (overlapCharacter!="")
+			{
+
+				GameObject character = GameObject.Find(overlapCharacter);
+				TextScript ts = character.GetComponent<TextScript>();
+				string[] sentences = ts.sentences;
+
+				bubbleBackgroundImage.enabled = true;
+				bubbleTextMesh.enabled = true;
+				if(sentences.Length>0 && sentences.Length-1>=speechBubbleCounter){
+					bubbleTextMesh.text = sentences[speechBubbleCounter];
+					speechBubbleCounter+=1;
+				}
+				else{
+					bubbleBackgroundImage.enabled = false;
+					bubbleTextMesh.enabled = false;
+				}
+			}
+			
+		}
+
+
 	}
 }
