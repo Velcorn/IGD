@@ -2848,7 +2848,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194815752}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -6672,6 +6672,10 @@ PrefabInstance:
       value: -0.08
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
+      propertyPath: m_JumpForce
+      value: 830
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
       propertyPath: m_PlatformsLayer
       value: MovingPlatforms
       objectReference: {fileID: 0}
@@ -9264,7 +9268,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633764631}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -15874,6 +15878,7 @@ GameObject:
   - component: {fileID: 1207828789}
   - component: {fileID: 1207828788}
   - component: {fileID: 1207828787}
+  - component: {fileID: 1207828790}
   m_Layer: 7
   m_Name: Idle (32x32)_0
   m_TagString: Untagged
@@ -15994,6 +15999,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1207828790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207828785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentences:
+  - Do you think mental illness is uncommon?
 --- !u!1 &1212670096
 GameObject:
   m_ObjectHideFlags: 0
@@ -16468,7 +16487,8 @@ GameObject:
   - component: {fileID: 1242584052}
   - component: {fileID: 1242584051}
   - component: {fileID: 1242584050}
-  m_Layer: 3
+  - component: {fileID: 1242584053}
+  m_Layer: 7
   m_Name: Idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16568,6 +16588,20 @@ Transform:
   m_Father: {fileID: 1075604141}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1242584053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242584049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentences:
+  - 
 --- !u!1001 &1254147787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19290,7 +19324,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434306518}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.83, y: -116.61, z: 0}
+  m_LocalPosition: {x: 6.08, y: -101.2, z: 0}
   m_LocalScale: {x: 5.5, y: 5.5000005, z: 5.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -19336,8 +19370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - Hello I am the Mask Guy
-  - who are you?
+  - Mental illness is not as rare as you might think
 --- !u!4 &1439530627
 Transform:
   m_ObjectHideFlags: 0
