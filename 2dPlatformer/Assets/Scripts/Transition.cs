@@ -7,23 +7,13 @@ public class Transition : MonoBehaviour
 {
     void Update()
     {
-        if (Input.GetKey(KeyCode.Return))
+        if (Input.GetKey(KeyCode.Backspace))
         {
-            LoadTimer();
+            SceneManager.LoadScene("Timer0");
         }
-        else if (Input.GetKey(KeyCode.Escape))
+        else if (Input.GetKey(KeyCode.Return))
         {
-            LoadLevel();
+            SceneManager.LoadScene("Level1");
         }
-    }
-    
-    public void LoadTimer()
-    {
-        SceneManager.LoadScene("Timer0");
-    }
-    
-    public void LoadLevel()
-    {
-        SceneManager.LoadScene("Level1");
     }
 }
