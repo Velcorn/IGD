@@ -21,6 +21,7 @@ public class TextScript : MonoBehaviour
 
 	private List<TextMeshProUGUI> choices = new List<TextMeshProUGUI>();
 	private int currentChoice = 0;
+	private bool showingChoices = false;
 
 	private GameObject character = null;
 
@@ -37,45 +38,47 @@ public class TextScript : MonoBehaviour
 		bubbleTextMesh = speechBubbleText.GetComponent<TextMeshProUGUI>();
 		bubbleTextMesh.enabled = false;
 
-		for (int i = 0; i < 4; i++) {
-			GameObject s = GameObject.Find("Choice"+i);
-			TextMeshProUGUI t = s.GetComponent<TextMeshProUGUI>();
-			choices.Add(t);
+
+	}
+
+	//set an arrow in front of the selected choice with up down arrows or 'S' and 'W'
+	void setSelector(){
+		Debug.Log(currentChoice);
+		foreach(var s in choices) {
+			if(s.text.Length>=2 && s.text.Substring(0, 2)=="->"){
+				s.text = s.text.Substring(2, s.text.Length-2);
+			}
+		}
+		if(choices[currentChoice].text.Length>1 && choices[currentChoice].text.Substring(0, 2)!="->"){
+			choices[currentChoice].text = "->"+choices[currentChoice].text;
 		}
 	}
+
 
 	// Update is called once per frame
 	void Update(){
-
 		if(character!=null && transform.name==character.name){
-			TextScript ts = character.GetComponent<TextScript>();
-			string[] answer_choices = ts.answer_choices;
-
-			//set an arrow in front of the selected choice with up down arrows
-			if(Input.GetKeyDown(KeyCode.DownArrow)){
-				if(currentChoice<answer_choices.Length-1){
-					currentChoice+=1;
-				} 
-			}
-			if(Input.GetKeyDown(KeyCode.UpArrow)){
-				if(currentChoice>0){
-					currentChoice-=1;
+			if(showingChoices){
+				if(Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)){
+					if(currentChoice<answer_choices.Length-1){
+						currentChoice+=1;
+						setSelector();
+					} 
 				}
-			}
-				
-			foreach(var s in choices) {
-				if(s.text.Length>=2 && s.text.Substring(0, 2)=="->"){
-					s.text = s.text.Substring(2, s.text.Length-2);
+				if(Input.GetKeyDown(KeyCode.UpArrow)|| Input.GetKeyDown(KeyCode.W)){
+					if(currentChoice>0){
+						currentChoice-=1;
+						setSelector();
+					}
 				}
-			}
-
-			if(choices[currentChoice].text.Length>1 && choices[currentChoice].text.Substring(0, 2)!="->"){
-				choices[currentChoice].text = "->"+choices[currentChoice].text;
 			}
 		}
 	}
 
+
+
 	public void hideChoices(){
+		showingChoices = false;
 		for (int i = 0; i < 4; i++) {
 			GameObject s = GameObject.Find("Choice"+i);
 			TextMeshProUGUI t = s.GetComponent<TextMeshProUGUI>();
@@ -88,6 +91,7 @@ public class TextScript : MonoBehaviour
 		bubbleTextMesh.enabled = false;
 		hideChoices();
 		interactionCounter=0;
+		character=null;
 	}
 
 
@@ -110,8 +114,10 @@ public class TextScript : MonoBehaviour
 		}
 		//show answer choices if there are any
 		else if(answer_choices.Length>0 && interactionCounter==sentences.Length){
+			currentChoice=0;
 			bubbleBackgroundImage.enabled = true;
 			bubbleTextMesh.enabled = false;//hide any previous text
+			showingChoices = true;
 			for (int i = 0; i < 4; i++) {
 				//fill choice objects with answer choices
 				if(i<=answer_choices.Length-1){
@@ -119,6 +125,7 @@ public class TextScript : MonoBehaviour
 					TextMeshProUGUI t = s.GetComponent<TextMeshProUGUI>();
 					t.enabled = true;
 					t.text = answer_choices[i];
+					choices.Add(t);
 				}
 				//hide unused choice objects
 				else{
@@ -127,6 +134,7 @@ public class TextScript : MonoBehaviour
 					t.enabled = false;
 				}
 			}
+			setSelector();
 			interactionCounter+=1;
 			return "disableMovement";
 		}
