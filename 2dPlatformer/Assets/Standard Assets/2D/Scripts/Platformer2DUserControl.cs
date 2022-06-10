@@ -27,7 +27,7 @@ namespace UnityStandardAssets._2D
 			}
 			if (!m_Interaction)
 			{
-				m_Interaction = CrossPlatformInputManager.GetButtonDown("Fire2");
+				m_Interaction = Input.GetKeyDown(KeyCode.E);
 			}
 
 		}
