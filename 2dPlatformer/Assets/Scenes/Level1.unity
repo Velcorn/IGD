@@ -16880,8 +16880,10 @@ MonoBehaviour:
   - '1.53 Billion '
   - 193.2 Billion
   - 418.14 Billion
-  conclusion_right: []
-  conclusion_wrong: []
+  conclusion_right:
+  - That is correct. You may pass!
+  conclusion_wrong:
+  - You shall not pass! (Look around for hints)
   correct_answer_index: 2
   reaction_script: {fileID: 1207828791}
 --- !u!114 &1207828791
@@ -20291,12 +20293,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - Hello I am the Mask Guy.
-  - who are you?
-  - Alright! Welcome to the Downearth.
+  - Welcome to the Downearth.
   - Your mission is to escape from here.
   - But being skilled is not enough. You always have to be alert and pay attention
     to hints.
-  - Now let's go!
+  - Good luck on your journey!
   answer_choices:
   - first answer
   - second answer
