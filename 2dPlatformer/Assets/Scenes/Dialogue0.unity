@@ -396,13 +396,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 551866969}
   sentences:
-  - '???: Hey, you, you''re finally awake. I was getting worried. '
-  - 'You: Who are you? Where am I?'
+  - '???: Hey, you, you''re finally awake. I was getting worried. What is your name?'
+  - I-I'm Emily... W-who are you? W-where am I?
   - '???: You fell into this magical well. My name is Selene and I will guide you
     through your journey and help you face your fears!'
-  - 'You: I don''t want to be here. This has to be a dream. Please wake up, please
-    wake up!'
-  - 'You: *breathing rapidly, heartbeat increasing*'
+  - I don't want to be here. This has to be a dream. Please wake up, please wake
+    up!
+  - '*breathing rapidly, heartrate increasing*'
   - 'Selene: Hey, hey, everything is going to be okay. Here is an exercise called
     4-7-8 breathing to help you calm down...'
   - 1. First, let your lips part. Make a whooshing sound, exhaling completely through
