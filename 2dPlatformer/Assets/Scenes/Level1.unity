@@ -3098,14 +3098,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - 'Selene: You did well, Emily! '
-  - Welcome to the Downearth.
-  - I've noticed you've been feeling pretty down lately, so I've brought you here
-    so you can learn to feel better!
-  - This well is a cave is a magical place where you will learn about anxiety & depression
-    and some useful tips & tricks on how to deal with them!
-  - Don't be afraid to talk to the creatures you will encounter on your way, they
-    are here to guide and help you on your journey.
-  - Good luck, I believe in you!
+  - 'Selene: Welcome to the Downearth.'
+  - 'Selene: I''ve noticed you''ve been feeling pretty down lately, so I''ve brought
+    you here so you can learn to feel better!'
+  - 'Selene: This well is a cave is a magical place where you will learn about anxiety
+    & depression and some useful tips & tricks on how to deal with them!'
+  - 'Selene: Don''t be afraid to talk to the creatures you will encounter on your
+    way, they are here to guide and help you on your journey.'
+  - 'Selene: Good luck, I believe in you!'
   answer_choices: []
   conclusion_right: []
   conclusion_wrong: []
