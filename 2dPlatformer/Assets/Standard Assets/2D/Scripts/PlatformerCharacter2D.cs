@@ -123,19 +123,16 @@ namespace UnityStandardAssets._2D
 				// Set whether or not the character is crouching in the animator
 				m_Anim.SetBool("Crouch", crouch);
 
-				//change if crouching
+				//reduce collider height if crouching
 				if(crouch){
 					boxCollider.offset = new Vector2(0.0f, -0.37f);
 					boxCollider.size = new Vector2(0.25f, 0.5f);
 				}
 				else{
-					//reduce collider height if crouching
 					boxCollider.offset = new Vector2(0.0f, -0.08f);
 					boxCollider.size = new Vector2(0.25f, 1.06f);
 				}
 
-
-				
 
 				//only control the player if grounded or airControl is turned on
 				if (m_Grounded || m_AirControl)
@@ -171,6 +168,11 @@ namespace UnityStandardAssets._2D
 					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 				}
 			}
+			else
+			{
+				m_Anim.SetFloat("Speed", 0);
+			}
+
 		}
 
 

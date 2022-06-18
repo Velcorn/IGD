@@ -44,7 +44,6 @@ public class TextScript : MonoBehaviour
 
 	//set an arrow in front of the selected choice with up down arrows or 'S' and 'W'
 	void setSelector(){
-		Debug.Log(currentChoice);
 		foreach(var s in choices) {
 			if(s.text.Length>=2 && s.text.Substring(0, 2)=="->"){
 				s.text = s.text.Substring(2, s.text.Length-2);
@@ -105,7 +104,6 @@ public class TextScript : MonoBehaviour
 			string[] answer_choices = ts.answer_choices;
 			int correct_answer_index = ts.correct_answer_index;
 		
-
 			//show sentences if there are any
 			if(sentences.Length>0 && interactionCounter<sentences.Length){
 				//show speech bubble and question text
@@ -147,10 +145,7 @@ public class TextScript : MonoBehaviour
 				bubbleTextMesh.enabled = true;
 				int adjusted_counter_to_index = interactionCounter-(sentences.Length+1);
 				//player made the right choice
-				Debug.Log(currentChoice);
-				Debug.Log(correct_answer_index);
 				if(currentChoice==correct_answer_index){
-					Debug.Log("correct!");
 					if(conclusion_right.Length>0 && adjusted_counter_to_index<conclusion_right.Length){
 						bubbleTextMesh.text = conclusion_right[adjusted_counter_to_index];
 						interactionCounter+=1;
@@ -168,7 +163,6 @@ public class TextScript : MonoBehaviour
 				}
 				//player made the wrong choice
 				else{
-					Debug.Log("incorrect!");
 					if(conclusion_wrong.Length>0 && adjusted_counter_to_index<conclusion_wrong.Length){
 						bubbleTextMesh.text = conclusion_wrong[adjusted_counter_to_index];
 						interactionCounter+=1;
