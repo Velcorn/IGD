@@ -3055,6 +3055,7 @@ GameObject:
   - component: {fileID: 142447991}
   - component: {fileID: 142447990}
   - component: {fileID: 142447989}
+  - component: {fileID: 142447994}
   m_Layer: 7
   m_Name: Selene
   m_TagString: Untagged
@@ -3089,6 +3090,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81714f0833ce5c6de9e6c9ce7872f406, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  FrogTeleportTarget: {fileID: 0}
 --- !u!114 &142447990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3116,6 +3119,7 @@ MonoBehaviour:
   conclusion_wrong: []
   correct_answer_index: 1
   reaction_script: {fileID: 142447989}
+  firstInteractionDone: 0
 --- !u!61 &142447991
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3214,6 +3218,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &142447994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142447987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9644b2beedd5a02e4884a544a0284cba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentences:
+  - a sentence in second interaction
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 0
+  reaction_script: {fileID: 0}
 --- !u!4 &147712237 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4704693821745782968, guid: 4190beefc06d47341908ac1dfd5f865f, type: 3}
@@ -3887,6 +3910,7 @@ MonoBehaviour:
   conclusion_wrong: []
   correct_answer_index: 0
   reaction_script: {fileID: 0}
+  firstInteractionDone: 0
 --- !u!95 &157034445
 Animator:
   serializedVersion: 4
@@ -7600,6 +7624,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81714f0833ce5c6de9e6c9ce7872f406, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  FrogTeleportTarget: {fileID: 0}
 --- !u!114 &389871845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7619,6 +7645,7 @@ MonoBehaviour:
   conclusion_wrong: []
   correct_answer_index: 1
   reaction_script: {fileID: 389871844}
+  firstInteractionDone: 0
 --- !u!61 &389871846
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22735,6 +22762,8 @@ GameObject:
   - component: {fileID: 1207828787}
   - component: {fileID: 1207828790}
   - component: {fileID: 1207828791}
+  - component: {fileID: 1207828793}
+  - component: {fileID: 1207828792}
   m_Layer: 7
   m_Name: NinjaFrog
   m_TagString: Untagged
@@ -22877,11 +22906,12 @@ MonoBehaviour:
   - 193.2 Billion
   - 418.14 Billion
   conclusion_right:
-  - That is correct. You may pass!
+  - That is correct.
   conclusion_wrong:
   - You shall not pass! (Look around for hints)
   correct_answer_index: 2
   reaction_script: {fileID: 1207828791}
+  firstInteractionDone: 0
 --- !u!114 &1207828791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22894,6 +22924,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81714f0833ce5c6de9e6c9ce7872f406, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 488658681}
+  FrogTeleportTarget: {fileID: 1908680583}
+--- !u!114 &1207828792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207828785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc998c67792008a1a382b3ebdfbaa65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 488658681}
+  FrogTeleportTarget: {fileID: 1397069618}
+--- !u!114 &1207828793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207828785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9644b2beedd5a02e4884a544a0284cba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentences:
+  - one more question
+  answer_choices:
+  - this
+  - or that
+  conclusion_right:
+  - That is correct. You may pass
+  conclusion_wrong:
+  - nope
+  correct_answer_index: 1
+  reaction_script: {fileID: 1207828792}
 --- !u!1 &1209942013
 GameObject:
   m_ObjectHideFlags: 0
@@ -23560,6 +23629,7 @@ MonoBehaviour:
   conclusion_wrong: []
   correct_answer_index: 0
   reaction_script: {fileID: 0}
+  firstInteractionDone: 0
 --- !u!1001 &1242669738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27330,6 +27400,7 @@ MonoBehaviour:
   conclusion_wrong: []
   correct_answer_index: 1
   reaction_script: {fileID: 1434306523}
+  firstInteractionDone: 0
 --- !u!114 &1434306523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27342,6 +27413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81714f0833ce5c6de9e6c9ce7872f406, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  FrogTeleportTarget: {fileID: 0}
 --- !u!95 &1434306524
 Animator:
   serializedVersion: 4

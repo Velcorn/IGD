@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ReactionScript : MonoBehaviour
+public class SecondReactionScript : MonoBehaviour
 {
-	
+
 	public GameObject player;
 	public Transform FrogTeleportTarget;
 
@@ -18,7 +18,8 @@ public class ReactionScript : MonoBehaviour
 				boxCollider.enabled=false;
 			}
 			if(gameObject.name=="NinjaFrog"){
-				Debug.Log("no action");
+				BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
+				boxCollider.enabled=false;
 			}
 		}
 		else{

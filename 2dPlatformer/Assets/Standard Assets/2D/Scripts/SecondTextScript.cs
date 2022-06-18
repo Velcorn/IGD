@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class TextScript : MonoBehaviour
+public class SecondTextScript : MonoBehaviour
 {
 
 	public string[] sentences;
@@ -13,7 +13,7 @@ public class TextScript : MonoBehaviour
 	public string[] conclusion_right;
 	public string[] conclusion_wrong;
 	public int correct_answer_index;
-	public ReactionScript reaction_script;
+	public SecondReactionScript reaction_script;
 
 	private UnityEngine.UI.Image bubbleBackgroundImage;       
 	private TextMeshProUGUI bubbleTextMesh;
@@ -24,7 +24,6 @@ public class TextScript : MonoBehaviour
 	private bool showingChoices = false;
 
 	private GameObject character = null;
-	public bool firstInteractionDone = false;
 
 
 
@@ -100,11 +99,12 @@ public class TextScript : MonoBehaviour
 		character=overlapCharacter;
 		
 		TextScript ts = character.GetComponent<TextScript>();
-		if(!ts.firstInteractionDone){
-			string[] sentences = ts.sentences;
-			string[] answer_choices = ts.answer_choices;
-			int correct_answer_index = ts.correct_answer_index;
-		
+		if(ts.firstInteractionDone){
+			SecondTextScript sts = character.GetComponent<SecondTextScript>();
+
+			string[] sentences = sts.sentences;
+			string[] answer_choices = sts.answer_choices;
+			int correct_answer_index = sts.correct_answer_index;
 
 			//show sentences if there are any
 			if(sentences.Length>0 && interactionCounter<sentences.Length){
@@ -162,7 +162,6 @@ public class TextScript : MonoBehaviour
 						{
 							reaction_script.react(true);
 						}
-						firstInteractionDone = true;
 						return "enableMovement";
 					}
 				}
@@ -175,11 +174,11 @@ public class TextScript : MonoBehaviour
 						return "disableMovement";
 					}
 					else{
+						resetAndHideAll();
 						if(reaction_script != null)
 						{
 							reaction_script.react(false);
 						}
-						resetAndHideAll();
 						return "enableMovement";
 					}
 				}

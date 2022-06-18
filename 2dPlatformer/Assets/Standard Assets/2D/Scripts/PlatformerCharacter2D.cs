@@ -189,7 +189,13 @@ namespace UnityStandardAssets._2D
 			if (overlapCharacter!=null)
 			{
 				TextScript ts = overlapCharacter.GetComponent<TextScript>();
-				movement = ts.interaction(overlapCharacter);
+				if(!ts.firstInteractionDone){
+					movement = ts.interaction(overlapCharacter);
+				}
+				else if(overlapCharacter.GetComponent<SecondTextScript>()){
+					SecondTextScript sts = overlapCharacter.GetComponent<SecondTextScript>();
+					movement = sts.interaction(overlapCharacter);
+				}
 			}
 		}
 
