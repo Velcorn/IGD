@@ -22895,19 +22895,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextScript_index: 1
   sentences:
-  - Hey you!
-  - Answer my Question!
-  - Serious mental illness cost America how much in lost revenue each year?
+  - Hey, I'm one of the guardfrogs. We'll keep you from moving forward if you can't
+    answer our questions.
+  - So then to the first question
+  - What is the percentage of people experiencing mental health problems?
   answer_choices:
-  - 20.7 Million
-  - '1.53 Billion '
-  - 193.2 Billion
-  - 418.14 Billion
+  - One in four
+  - One in ten
+  - One out of a hundred
   conclusion_right:
-  - That is correct.
+  - Very good! Never forget, you are not alone with your problems!
   conclusion_wrong:
-  - You shall not pass! (Look around for hints)
-  correct_answer_index: 2
+  - This is the wrong answer. You will be teleported back to the beginning.
+  correct_answer_index: 0
   reaction_script: {fileID: 1207828793}
 --- !u!114 &1207828792
 MonoBehaviour:
@@ -22923,14 +22923,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextScript_index: 3
   sentences:
-  - one more question
+  - 'Let''s move on to the second question:'
+  - What are typical symptoms of depression?
   answer_choices:
-  - first
-  - second
+  - Laziness and arrogance
+  - Hallucinations and hearing voices
+  - Migraine and fever
+  - Loss of interest and joylessness
   conclusion_right:
-  - correct
+  - That's right. So you have successfully answered my questions. I will now let
+    you pass.
+  - Good luck on your further way!
   conclusion_wrong:
-  - wrong
+  - This is the wrong answer. You will be teleported back to the beginning.
   correct_answer_index: 1
   reaction_script: {fileID: 1207828793}
 --- !u!114 &1207828793
@@ -22960,7 +22965,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextScript_index: 0
   sentences:
-  - quack!
+  - Hey my dear. You've come a long way, but you don't seem ready for my task.
+  - Look back once more..
   answer_choices: []
   conclusion_right: []
   conclusion_wrong: []
@@ -22980,7 +22986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextScript_index: 2
   sentences:
-  - I'm a Ninja!
+  - To answer the second question you should look again above.
   answer_choices: []
   conclusion_right: []
   conclusion_wrong: []
