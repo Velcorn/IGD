@@ -3055,7 +3055,6 @@ GameObject:
   - component: {fileID: 142447991}
   - component: {fileID: 142447990}
   - component: {fileID: 142447989}
-  - component: {fileID: 142447994}
   m_Layer: 7
   m_Name: Selene
   m_TagString: Untagged
@@ -3091,7 +3090,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  FrogTeleportTarget: {fileID: 0}
 --- !u!114 &142447990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3104,6 +3102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextScript_index: 0
   sentences:
   - 'Selene: You did well, Emily! '
   - 'Selene: Welcome to the Downearth.'
@@ -3119,7 +3118,6 @@ MonoBehaviour:
   conclusion_wrong: []
   correct_answer_index: 1
   reaction_script: {fileID: 142447989}
-  firstInteractionDone: 0
 --- !u!61 &142447991
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3215,28 +3213,9 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &142447994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142447987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9644b2beedd5a02e4884a544a0284cba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sentences:
-  - a sentence in second interaction
-  answer_choices: []
-  conclusion_right: []
-  conclusion_wrong: []
-  correct_answer_index: 0
-  reaction_script: {fileID: 0}
 --- !u!4 &147712237 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4704693821745782968, guid: 4190beefc06d47341908ac1dfd5f865f, type: 3}
@@ -3780,6 +3759,7 @@ GameObject:
   - component: {fileID: 157034441}
   - component: {fileID: 157034444}
   - component: {fileID: 157034445}
+  - component: {fileID: 157034446}
   m_Layer: 7
   m_Name: TalkingBat
   m_TagString: Untagged
@@ -3892,6 +3872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextScript_index: 0
   sentences:
   - 'Bat: Hello, you. I am Michael, the bat.'
   - Hi, Michael, I'm Emily. It's strange to talk to a bat.
@@ -3909,8 +3890,7 @@ MonoBehaviour:
   conclusion_right: []
   conclusion_wrong: []
   correct_answer_index: 0
-  reaction_script: {fileID: 0}
-  firstInteractionDone: 0
+  reaction_script: {fileID: 157034446}
 --- !u!95 &157034445
 Animator:
   serializedVersion: 4
@@ -3931,6 +3911,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &157034446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157034440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81714f0833ce5c6de9e6c9ce7872f406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 488658681}
 --- !u!1 &174037169
 GameObject:
   m_ObjectHideFlags: 0
@@ -7625,7 +7618,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  FrogTeleportTarget: {fileID: 0}
 --- !u!114 &389871845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7638,6 +7630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextScript_index: 0
   sentences:
   - Hello I am the Pink Man.
   answer_choices: []
@@ -7645,7 +7638,6 @@ MonoBehaviour:
   conclusion_wrong: []
   correct_answer_index: 1
   reaction_script: {fileID: 389871844}
-  firstInteractionDone: 0
 --- !u!61 &389871846
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9886,7 +9878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
       propertyPath: m_SortingLayer
-      value: -2
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
       propertyPath: m_SortingOrder
@@ -22764,9 +22756,9 @@ GameObject:
   - component: {fileID: 1207828789}
   - component: {fileID: 1207828788}
   - component: {fileID: 1207828787}
-  - component: {fileID: 1207828790}
-  - component: {fileID: 1207828791}
   - component: {fileID: 1207828793}
+  - component: {fileID: 1207828790}
+  - component: {fileID: 1207828794}
   - component: {fileID: 1207828792}
   m_Layer: 7
   m_Name: NinjaFrog
@@ -22900,6 +22892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextScript_index: 0
   sentences:
   - Hey you!
   - Answer my Question!
@@ -22914,9 +22907,32 @@ MonoBehaviour:
   conclusion_wrong:
   - You shall not pass! (Look around for hints)
   correct_answer_index: 2
-  reaction_script: {fileID: 1207828791}
-  firstInteractionDone: 0
---- !u!114 &1207828791
+  reaction_script: {fileID: 1207828793}
+--- !u!114 &1207828792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207828785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 2
+  sentences:
+  - one more question
+  answer_choices:
+  - first
+  - second
+  conclusion_right:
+  - correct
+  conclusion_wrong:
+  - wrong
+  correct_answer_index: 1
+  reaction_script: {fileID: 1207828793}
+--- !u!114 &1207828793
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -22929,44 +22945,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 488658681}
-  FrogTeleportTarget: {fileID: 1908680583}
---- !u!114 &1207828792
+--- !u!114 &1207828794
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207828785}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cc998c67792008a1a382b3ebdfbaa65, type: 3}
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 488658681}
-  FrogTeleportTarget: {fileID: 1397069618}
---- !u!114 &1207828793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207828785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9644b2beedd5a02e4884a544a0284cba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  TextScript_index: 1
   sentences:
-  - one more question
-  answer_choices:
-  - this
-  - or that
-  conclusion_right:
-  - That is correct. You may pass
-  conclusion_wrong:
-  - nope
-  correct_answer_index: 1
-  reaction_script: {fileID: 1207828792}
+  - quack!
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 0
+  reaction_script: {fileID: 0}
 --- !u!1 &1209942013
 GameObject:
   m_ObjectHideFlags: 0
@@ -23626,6 +23624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextScript_index: 0
   sentences:
   - 42
   answer_choices: []
@@ -23633,7 +23632,6 @@ MonoBehaviour:
   conclusion_wrong: []
   correct_answer_index: 0
   reaction_script: {fileID: 0}
-  firstInteractionDone: 0
 --- !u!1001 &1242669738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25878,7 +25876,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1778614749735387491, guid: e5f819bbcd3ca2745817c51a09f82643, type: 3}
       propertyPath: m_Name
-      value: woodbar (4)
+      value: FrogTeleportTarget
       objectReference: {fileID: 0}
     - target: {fileID: 4144275610147856084, guid: e5f819bbcd3ca2745817c51a09f82643, type: 3}
       propertyPath: m_RootOrder
@@ -26388,7 +26386,7 @@ GameObject:
   - component: {fileID: 1397069618}
   - component: {fileID: 1397069617}
   m_Layer: 0
-  m_Name: Stone2
+  m_Name: FrogTeleportTarget2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27397,6 +27395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextScript_index: 0
   sentences:
   - Hello I am the Mask Guy.
   answer_choices: []
@@ -27404,7 +27403,6 @@ MonoBehaviour:
   conclusion_wrong: []
   correct_answer_index: 1
   reaction_script: {fileID: 1434306523}
-  firstInteractionDone: 0
 --- !u!114 &1434306523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27418,7 +27416,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  FrogTeleportTarget: {fileID: 0}
 --- !u!95 &1434306524
 Animator:
   serializedVersion: 4

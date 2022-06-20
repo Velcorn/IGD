@@ -7,7 +7,7 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class TextScript : MonoBehaviour
 {
-
+	public int TextScript_index;
 	public string[] sentences;
 	public string[] answer_choices;
 	public string[] conclusion_right;
@@ -24,9 +24,6 @@ public class TextScript : MonoBehaviour
 	private bool showingChoices = false;
 
 	private GameObject character = null;
-	public bool firstInteractionDone = false;
-
-
 
 	// Start is called before the first frame update
 	void Awake(){
@@ -38,6 +35,7 @@ public class TextScript : MonoBehaviour
 		GameObject speechBubbleText = GameObject.Find("SpeechBubbleText");
 		bubbleTextMesh = speechBubbleText.GetComponent<TextMeshProUGUI>();
 		bubbleTextMesh.enabled = false;
+
 
 
 	}
@@ -96,23 +94,43 @@ public class TextScript : MonoBehaviour
 
 
 	public string interaction(GameObject overlapCharacter){
+
 		character=overlapCharacter;
+
+
+		if(reaction_script==null){
+			Debug.Log("ReactionScript missing for TextScript on character: "+character.name);
+		}
 		
-		TextScript ts = character.GetComponent<TextScript>();
-		if(!ts.firstInteractionDone){
+		Component[] text_scripts;
+		text_scripts = character.GetComponents<TextScript>();
+		TextScript ts = null;
+		foreach (TextScript script in text_scripts){
+			if(script.enabled==true){
+				ts = script;
+				
+			}
+		}
+		if(ts!=null)
+		{
 			string[] sentences = ts.sentences;
 			string[] answer_choices = ts.answer_choices;
 			int correct_answer_index = ts.correct_answer_index;
 		
 			//show sentences if there are any
 			if(sentences.Length>0 && interactionCounter<sentences.Length){
+
 				//show speech bubble and question text
 				bubbleBackgroundImage.enabled = true;
 				bubbleTextMesh.enabled = true;
 				bubbleTextMesh.text = sentences[interactionCounter];
 				interactionCounter+=1;	
+				
 				return "disableMovement";
 			}
+
+			
+
 			//show answer choices if there are any
 			else if(answer_choices.Length>0 && interactionCounter==sentences.Length){
 				currentChoice=0;
@@ -155,9 +173,8 @@ public class TextScript : MonoBehaviour
 						resetAndHideAll();
 						if(reaction_script != null)
 						{
-							reaction_script.react(true);
+							reaction_script.react(TextScript_index,"correct");
 						}
-						firstInteractionDone = true;
 						return "enableMovement";
 					}
 				}
@@ -171,12 +188,16 @@ public class TextScript : MonoBehaviour
 					else{
 						if(reaction_script != null)
 						{
-							reaction_script.react(false);
+							reaction_script.react(TextScript_index,"wrong");
 						}
 						resetAndHideAll();
 						return "enableMovement";
 					}
 				}
+			}
+			//any reaction after just talking to the character
+			if(reaction_script!=null){
+				reaction_script.react(TextScript_index,"talked");
 			}
 			resetAndHideAll();
 			return "enableMovement";
