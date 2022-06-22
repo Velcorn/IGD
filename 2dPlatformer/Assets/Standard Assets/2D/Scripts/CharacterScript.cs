@@ -172,7 +172,7 @@ namespace UnityStandardAssets._2D
 			}
 			else
 			{
-				//m_Anim.SetFloat("Speed", 0);
+				m_Anim.SetFloat("Speed", 0);
 			}
 
 		}

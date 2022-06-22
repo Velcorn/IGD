@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7b86fcc40a7839c948cc7cb109c12d0d
+guid: b57da92ca2f662d1e8dd20e80c94581c
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Emilys Candy
+  - Milonga
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

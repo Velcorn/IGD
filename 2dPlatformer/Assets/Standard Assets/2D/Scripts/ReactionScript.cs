@@ -7,11 +7,15 @@ public class ReactionScript : MonoBehaviour
 	
 	public GameObject player;
 	private GameObject frog;
+	private GameObject shaman;
+	private GameObject bat;
 
 
 	// Start is called before the first frame update
 	void Awake(){
 		frog = GameObject.Find("NinjaFrog");
+		shaman = GameObject.Find("MaskGuy");
+		bat = GameObject.Find("TalkingBat");
 	}
 	
 
@@ -19,16 +23,13 @@ public class ReactionScript : MonoBehaviour
 	{
 		if(reaction_index == 0){
 			if(reacting_to == "talked"){
-				Debug.Log("reacting to talking");
 				if(gameObject.name=="TalkingBat"){
 					enableTextScriptWithIndexForCharacter(frog,1);
-				}
-				if(gameObject.name=="MaskGuy"){
-					enableTextScriptWithIndexForCharacter(frog,3);
+					enableTextScriptWithIndexForCharacter(shaman,1);
+					enableTextScriptWithIndexForCharacter(bat,1);
 				}
 			}
 			if(reacting_to == "correct"){
-				Debug.Log("no action");
 			}
 			else if (reacting_to == "wrong"){
 			}
@@ -38,13 +39,17 @@ public class ReactionScript : MonoBehaviour
 
 		if(reaction_index == 1){
 			if(reacting_to == "talked"){
-				Debug.Log("no action");
+				if(gameObject.name=="MaskGuy"){
+					enableTextScriptWithIndexForCharacter(frog,3);
+				}
+				if(gameObject.name=="TalkingBat"){
+					enableTextScriptWithIndexForCharacter(bat,2);
+				}
 			}
 			if(reacting_to == "correct"){
 				if(gameObject.name=="NinjaFrog"){
 					enableTextScriptWithIndexForCharacter(frog,2);
 				}
-
 			}
 			else if (reacting_to == "wrong"){
 				if(gameObject.name=="NinjaFrog"){
@@ -63,13 +68,10 @@ public class ReactionScript : MonoBehaviour
 
 		if(reaction_index == 2){
 			if(reacting_to == "talked"){
-				Debug.Log("no action");
 			}
 			if(reacting_to == "correct"){
-				Debug.Log("no action");
 			}
 			else if (reacting_to == "wrong"){
-				Debug.Log("no action");
 			}
 		}
 
@@ -77,7 +79,6 @@ public class ReactionScript : MonoBehaviour
 
 		if(reaction_index == 3){
 			if(reacting_to == "talked"){
-				Debug.Log("no action");
 			}
 			if(reacting_to == "correct"){
 				if(gameObject.name=="NinjaFrog"){
