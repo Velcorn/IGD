@@ -8,6 +8,11 @@ using UnityStandardAssets.CrossPlatformInput;
 public class TextScript : MonoBehaviour
 {
 	public int TextScript_index;
+
+	public TMP_FontAsset character_font;
+	public TMP_FontAsset standard_font;
+	public List<int> idxs_of_sents_with_standard_font;
+
 	public string[] sentences;
 	public string[] answer_choices;
 	public string[] conclusion_right;
@@ -25,6 +30,7 @@ public class TextScript : MonoBehaviour
 
 	private GameObject character = null;
 
+
 	// Start is called before the first frame update
 	void Awake(){
 
@@ -35,9 +41,6 @@ public class TextScript : MonoBehaviour
 		GameObject speechBubbleText = GameObject.Find("SpeechBubbleText");
 		bubbleTextMesh = speechBubbleText.GetComponent<TextMeshProUGUI>();
 		bubbleTextMesh.enabled = false;
-
-
-
 	}
 
 	//set an arrow in front of the selected choice with up down arrows or 'S' and 'W'
@@ -119,6 +122,13 @@ public class TextScript : MonoBehaviour
 		
 			//show sentences if there are any
 			if(sentences.Length>0 && interactionCounter<sentences.Length){
+
+				if(idxs_of_sents_with_standard_font.Contains(interactionCounter)){
+					bubbleTextMesh.font = standard_font;
+				}
+				else{
+					bubbleTextMesh.font = character_font;
+				}
 
 				//show speech bubble and question text
 				bubbleBackgroundImage.enabled = true;

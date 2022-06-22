@@ -3607,6 +3607,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextScript_index: 0
+  character_font: {fileID: 11400000, guid: ea2fbcf6ddfd75ef48b697b38302c3f4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 
   sentences:
   - 'Selene: You did well, Emily! '
   - 'Selene: Welcome to the Downearth.'
@@ -4442,16 +4445,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextScript_index: 0
+  character_font: {fileID: 11400000, guid: ea2fbcf6ddfd75ef48b697b38302c3f4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 010000000300000005000000
   sentences:
   - 'Bat: Hello, you. I am Michael, the bat.'
-  - Hi, Michael, I'm Emily. It's strange to talk to a bat.
+  - 'Emily: Hi, Michael, I''m Emily. It''s strange to talk to a bat.'
   - 'Michael: Oh, don''t worry, I don''t bite. Many who wake up here are frightened.'
-  - Hmm, yes. I must admit it was pretty scary at first.
+  - 'Emily: Hmm, yes. I must admit it was pretty scary at first.'
   - 'Michael: I''m sorry, I hope you''re a bit better now. Why do you think you''ve
     been brought here?'
-  - I don't really know... Life just feels overwhelming, like everything is too much.
-    School is a burden. The last couple of days I couldn't even get out of bed...
-    Why am I even telling you all of this...
+  - 'Emily: I don''t really know... Life just feels overwhelming, like everything
+    is too much. School is a burden. The last couple of days I couldn''t even get
+    out of bed... Why am I even telling you all of this...'
   - 'Michael: Hey, hey, don''t worry. You are not alone with those feelings. Many
     people struggle with them. In 2019, 1 in 8 people were living with a mental disorder,
     with anxiety and  depressive disorders being the most common! '
@@ -7751,6 +7757,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextScript_index: 0
+  character_font: {fileID: 0}
+  standard_font: {fileID: 0}
+  idxs_of_sents_with_standard_font: 
   sentences:
   - Hello I am the Mask Guy.
   answer_choices: []
@@ -7916,8 +7925,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ea2fbcf6ddfd75ef48b697b38302c3f4, type: 2}
+  m_sharedMaterial: {fileID: -2360222161369317211, guid: ea2fbcf6ddfd75ef48b697b38302c3f4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8396,6 +8405,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextScript_index: 0
+  character_font: {fileID: 0}
+  standard_font: {fileID: 0}
+  idxs_of_sents_with_standard_font: 
   sentences:
   - Hello I am the Mask Guy.
   answer_choices: []
@@ -9690,6 +9702,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextScript_index: 0
+  character_font: {fileID: 0}
+  standard_font: {fileID: 0}
+  idxs_of_sents_with_standard_font: 
   sentences:
   - Hello I am the Pink Man.
   answer_choices: []
@@ -12196,7 +12211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
       propertyPath: m_Layer
@@ -12667,7 +12682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &492796495
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13768,7 +13783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8238cc53530b64fbb7828c3d3bb591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 690800719}
+  target: {fileID: 492796496}
   damping: 0.3
   lookAheadFactor: 3
   lookAheadReturnSpeed: 0.5
@@ -28798,6 +28813,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextScript_index: 1
+  character_font: {fileID: 0}
+  standard_font: {fileID: 0}
+  idxs_of_sents_with_standard_font: 
   sentences:
   - Hey, I'm one of the guardfrogs. We'll keep you from moving forward if you can't
     answer our questions.
@@ -28826,6 +28844,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextScript_index: 3
+  character_font: {fileID: 0}
+  standard_font: {fileID: 0}
+  idxs_of_sents_with_standard_font: 
   sentences:
   - 'Let''s move on to the second question:'
   - What are typical symptoms of depression?
@@ -28868,6 +28889,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextScript_index: 0
+  character_font: {fileID: 0}
+  standard_font: {fileID: 0}
+  idxs_of_sents_with_standard_font: 
   sentences:
   - Hey my dear. You've come a long way, but you don't seem ready for my task.
   - Look back once more..
@@ -28889,6 +28913,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextScript_index: 2
+  character_font: {fileID: 0}
+  standard_font: {fileID: 0}
+  idxs_of_sents_with_standard_font: 
   sentences:
   - To answer the second question you should look again above.
   answer_choices: []
@@ -29812,6 +29839,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextScript_index: 0
+  character_font: {fileID: 0}
+  standard_font: {fileID: 0}
+  idxs_of_sents_with_standard_font: 
   sentences:
   - 42
   answer_choices: []
@@ -32077,6 +32107,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextScript_index: 3
+  character_font: {fileID: 0}
+  standard_font: {fileID: 0}
+  idxs_of_sents_with_standard_font: 
   sentences:
   - 'Let''s move on to the second question:'
   - What are typical symptoms of depression?
@@ -32106,6 +32139,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextScript_index: 2
+  character_font: {fileID: 0}
+  standard_font: {fileID: 0}
+  idxs_of_sents_with_standard_font: 
   sentences:
   - To answer the second question you should look again above.
   answer_choices: []
@@ -32126,6 +32162,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextScript_index: 1
+  character_font: {fileID: 0}
+  standard_font: {fileID: 0}
+  idxs_of_sents_with_standard_font: 
   sentences:
   - Hey, I'm one of the guardfrogs. We'll keep you from moving forward if you can't
     answer our questions.
@@ -32154,6 +32193,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextScript_index: 0
+  character_font: {fileID: 0}
+  standard_font: {fileID: 0}
+  idxs_of_sents_with_standard_font: 
   sentences:
   - Hey my dear. You've come a long way, but you don't seem ready for my task.
   - Look back once more..
@@ -32454,6 +32496,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextScript_index: 0
+  character_font: {fileID: 0}
+  standard_font: {fileID: 0}
+  idxs_of_sents_with_standard_font: 
   sentences:
   - Hello I am the Mask Guy.
   answer_choices: []
@@ -35148,6 +35193,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextScript_index: 0
+  character_font: {fileID: 0}
+  standard_font: {fileID: 0}
+  idxs_of_sents_with_standard_font: 
   sentences:
   - Hello I am the Mask Guy.
   answer_choices: []
