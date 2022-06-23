@@ -4332,7 +4332,6 @@ GameObject:
   - component: {fileID: 157034445}
   - component: {fileID: 157034446}
   - component: {fileID: 157034444}
-  - component: {fileID: 157034448}
   - component: {fileID: 157034447}
   m_Layer: 7
   m_Name: TalkingBat
@@ -4354,7 +4353,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4520,40 +4519,6 @@ MonoBehaviour:
   sentences:
   - 'Michael: Remember, you are not alone with those feelings. Many people struggle
     with them. About one in four people are living with a mental disorder.'
-  answer_choices: []
-  conclusion_right: []
-  conclusion_wrong: []
-  correct_answer_index: 0
-  reaction_script: {fileID: 157034446}
---- !u!114 &157034448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157034440}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TextScript_index: 1
-  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
-  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  idxs_of_sents_with_standard_font: 010000000300000005000000
-  sentences:
-  - 'Bat: Hello, you. I am Michael, the bat.'
-  - 'Emily: Hi, Michael, I''m Emily. It''s strange to talk to a bat.'
-  - 'Michael: Oh, don''t worry, I don''t bite. Many who wake up here are frightened.'
-  - 'Emily: Hmm, yes. I must admit it was pretty scary at first.'
-  - 'Michael: I''m sorry, I hope you''re a bit better now. Why do you think you''ve
-    been brought here?'
-  - 'Emily: I don''t really know... Life just feels overwhelming, like everything
-    is too much. School is a burden. The last couple of days I couldn''t even get
-    out of bed... Why am I even telling you all of this...'
-  - 'Michael: Hey, hey, don''t worry. You are not alone with those feelings. Many
-    people struggle with them. About one in four people are living with a mental
-    disorder, with anxiety and depressive disorders being the most common! '
   answer_choices: []
   conclusion_right: []
   conclusion_wrong: []
@@ -5279,37 +5244,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33eddde824869668a8711ed189bd26d5, type: 3}
---- !u!1 &206577133
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 206577134}
-  m_Layer: 3
-  m_Name: CeilingCheck
-  m_TagString: Untagged
-  m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &206577134
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 206577133}
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.611594, y: 1.1742542, z: 0}
-  m_LocalScale: {x: 2.0116174, y: 1.9133998, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 492796496}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &208297313 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4704693821745782968, guid: 4190beefc06d47341908ac1dfd5f865f, type: 3}
@@ -12719,12 +12653,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492796492}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.7586, y: 1.39, z: 0}
+  m_LocalPosition: {x: 0.09, y: 1.38, z: 0}
   m_LocalScale: {x: 0.8806494, y: 0.9258546, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1766130362}
-  - {fileID: 206577134}
   - {fileID: 1412186489}
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -12743,7 +12676,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MaxSpeed: 10
   m_JumpForce: 830
-  m_CrouchSpeed: 0.36
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
@@ -12792,11 +12724,11 @@ BoxCollider2D:
   m_GameObject: {fileID: 492796492}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.11, y: -0.025322556}
+  m_Offset: {x: 0.12389846, y: -0.06999999}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.4612402, y: 0.5129197}
@@ -12807,7 +12739,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.53, y: 1.83}
+  m_Size: {x: 0.37220308, y: 1.73}
   m_EdgeRadius: 0
 --- !u!95 &492796501
 Animator:
@@ -12842,8 +12774,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08, y: 0.1}
-  m_Size: {x: 0.8, y: 1.93}
+  m_Offset: {x: 0.122883186, y: 0.062129248}
+  m_Size: {x: 0.5564163, y: 1.7587556}
   m_Direction: 0
 --- !u!1001 &495598904
 PrefabInstance:
@@ -15875,7 +15807,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1821535674}
-  m_RootOrder: 68
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &603372446
 SpriteRenderer:
@@ -26379,6 +26311,7 @@ Transform:
   - {fileID: 1071542388}
   - {fileID: 1397069618}
   - {fileID: 999353215}
+  - {fileID: 1858599151}
   - {fileID: 1421054098}
   - {fileID: 671488153}
   - {fileID: 1051781506}
@@ -26386,12 +26319,11 @@ Transform:
   - {fileID: 1994034560}
   - {fileID: 476866120}
   - {fileID: 264487236}
-  - {fileID: 1858599151}
+  - {fileID: 1349486758}
   - {fileID: 1360795486}
   - {fileID: 2126551369}
   - {fileID: 208297313}
   - {fileID: 147712237}
-  - {fileID: 1349486758}
   - {fileID: 795116745}
   - {fileID: 914114160}
   - {fileID: 1187933897}
@@ -32909,7 +32841,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1075604141}
-  m_RootOrder: 51
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 5.737}
 --- !u!212 &1349486759
 SpriteRenderer:
@@ -34332,7 +34264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1412186489
 Transform:
   m_ObjectHideFlags: 0
@@ -34346,7 +34278,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 492796496}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1412186490
 SpriteRenderer:
@@ -35157,7 +35089,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.03}
+  m_Offset: {x: 0.01924847, y: -0.030000001}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -35168,7 +35100,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.23, y: 0.28}
+  m_Size: {x: 0.2684969, y: 0.28}
   m_EdgeRadius: 0
 --- !u!114 &1434306522
 MonoBehaviour:
@@ -35188,7 +35120,7 @@ MonoBehaviour:
   idxs_of_sents_with_standard_font: 0100000004000000060000000a0000000e000000
   sentences:
   - 'Shaman: Hey you! Don''t worry, I''m nicer than I look. What''s your name?'
-  - 'Emily: I am Emily. Who are you? what are you doing in this dark place?'
+  - 'Emily: I am Emily. Who are you? What are you doing in this dark place?'
   - 'Shaman: Well, my name is Tom. I was once here for the same reason as you: I
     had my problems.'
   - But I managed to deal with it and understand what I had. Do you know why you
@@ -35267,41 +35199,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextScript_index: 1
+  TextScript_index: 2
   character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
   standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   idxs_of_sents_with_standard_font: 0100000004000000060000000a0000000e000000
   sentences:
-  - 'Shaman: Hey you! Don''t worry, I''m nicer than I look. What''s your name?'
-  - 'Emily: I am Emily. Who are you? what are you doing in this dark place?'
-  - 'Shaman: Well, my name is Tom. I was once here for the same reason as you: I
-    had my problems.'
-  - But I managed to deal with it and understand what I had. Do you know why you
-    are here? What is troubling you?
-  - 'Emily: ...'
-  - I understand, it's not easy to talk about your problems. Especially with a stranger...
-    Courage girl, I just want to help you.
-  - 'Emily: I find it hard to put into words. It all just feels bad. I don''t want
-    to get up anymore, everything is too hard for me and I''m too stupid for anything.'
-  - 'Tom: Emily you are not stupid! But what you''re telling me reminds me a lot
-    of my old self.'
-  - I also felt a depressed, depressive mood. I felt a lack of drive and felt tired.
-    Feelings of guilt and worthlessness have also not been uncommon there.
-  - It also sounds like you feel worthless yourself. Is that true?
-  - "Emily: Yes... but I understand what you're getting at. And you seem to be right.
-    I had a talk with the school psychologist this morning and she told me that I
-    could be depressed\u2026"
-  - 'Tom: Ah, okay. There are many symptoms of depression such as loss of interest
-    and joylessness - The things you''re feeling right now..I''ve felt those too.'
-  - You may feel helplessness, worthlessness and guilt. And think that the future
-    will only end badly and everything is hopeless. But it is not hopeless!
-  - I was able to free myself from these thoughts and feelings. I am well again and
-    today I am there for others - Like for you!
-  - 'Emily: ...'
-  - 'Tom: Don''t give up on yourself. The future will be fine. You will be able to
-    find the joy of life again - Just like me.'
-  - First, this cave will steer you on the right path. Try to get past the frog first.
-    I believe in you!
+  - 'Tom: You may feel loss of interest and joylessness, but don''t give up on yourself.
+    The future will be fine. You will be able to find the joy of life again - Just
+    like me.'
   answer_choices: []
   conclusion_right: []
   conclusion_wrong: []
@@ -38834,7 +38739,7 @@ Transform:
   - {fileID: 1263980343}
   - {fileID: 459813479}
   m_Father: {fileID: 1821535674}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1589232325
 SpriteRenderer:
@@ -42303,7 +42208,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766130361}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.611594, y: -0.84146166, z: 0}
+  m_LocalPosition: {x: 0.16, y: -0.9, z: 0}
   m_LocalScale: {x: 1.1355256, y: 1.0800833, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43630,9 +43535,10 @@ Transform:
   - {fileID: 1743806592}
   - {fileID: 8595867361491413202}
   - {fileID: 1068539391}
-  - {fileID: 805341324}
   - {fileID: 1589232324}
+  - {fileID: 805341324}
   - {fileID: 203497978}
+  - {fileID: 603372445}
   - {fileID: 967516829}
   - {fileID: 7412993932818290805}
   - {fileID: 216661142}
@@ -43693,7 +43599,6 @@ Transform:
   - {fileID: 912090579}
   - {fileID: 1161706707}
   - {fileID: 597972348}
-  - {fileID: 603372445}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44537,7 +44442,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1075604141}
-  m_RootOrder: 46
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1858599152
 SpriteRenderer:

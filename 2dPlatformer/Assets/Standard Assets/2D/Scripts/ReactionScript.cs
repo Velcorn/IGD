@@ -9,24 +9,43 @@ public class ReactionScript : MonoBehaviour
 	private GameObject frog;
 	private GameObject shaman;
 	private GameObject bat;
-
+	private static Dictionary<GameObject, int> current_state;
 
 	// Start is called before the first frame update
 	void Awake(){
 		frog = GameObject.Find("NinjaFrog");
 		shaman = GameObject.Find("MaskGuy");
 		bat = GameObject.Find("TalkingBat");
+
+		current_state = new Dictionary<GameObject, int>(){
+			{frog,0},
+			{shaman,0},
+			{bat,0}
+		};
 	}
 	
 
 	public void react(int reaction_index, string reacting_to)
 	{
+
 		if(reaction_index == 0){
 			if(reacting_to == "talked"){
-				if(gameObject.name=="TalkingBat"){
+				if(gameObject==bat){
+					if(current_state[bat]==1){
+						enableTextScriptWithIndexForCharacter(bat,2);
+					}
 					enableTextScriptWithIndexForCharacter(frog,1);
-					enableTextScriptWithIndexForCharacter(shaman,1);
-					enableTextScriptWithIndexForCharacter(bat,1);
+					current_state[gameObject]+=1;
+				}
+				if(gameObject==shaman){
+					if(current_state[shaman]==1){
+						enableTextScriptWithIndexForCharacter(shaman,2);
+					}
+					if(current_state[frog]>=1){
+						enableTextScriptWithIndexForCharacter(frog,3);
+						
+					}
+					current_state[gameObject]+=1;
 				}
 			}
 			if(reacting_to == "correct"){
@@ -39,20 +58,19 @@ public class ReactionScript : MonoBehaviour
 
 		if(reaction_index == 1){
 			if(reacting_to == "talked"){
-				if(gameObject.name=="MaskGuy"){
-					enableTextScriptWithIndexForCharacter(frog,3);
-				}
-				if(gameObject.name=="TalkingBat"){
-					enableTextScriptWithIndexForCharacter(bat,2);
-				}
 			}
 			if(reacting_to == "correct"){
-				if(gameObject.name=="NinjaFrog"){
-					enableTextScriptWithIndexForCharacter(frog,2);
+				if(gameObject==frog){
+					if(current_state[shaman]>=1){
+						enableTextScriptWithIndexForCharacter(frog,3);
+					}
+					else{
+						enableTextScriptWithIndexForCharacter(frog,2);
+					}
 				}
 			}
 			else if (reacting_to == "wrong"){
-				if(gameObject.name=="NinjaFrog"){
+				if(gameObject==frog){
 					GameObject FrogTeleportTarget = GameObject.Find("FrogTeleportTarget");
 					if(FrogTeleportTarget){
 						player.transform.position = FrogTeleportTarget.transform.position;
@@ -81,13 +99,13 @@ public class ReactionScript : MonoBehaviour
 			if(reacting_to == "talked"){
 			}
 			if(reacting_to == "correct"){
-				if(gameObject.name=="NinjaFrog"){
+				if(gameObject==frog){
 					BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
 					boxCollider.enabled=false;
 				}
 			}
 			else if (reacting_to == "wrong"){
-				if(gameObject.name=="NinjaFrog"){
+				if(gameObject==frog){
 					GameObject FrogTeleportTarget = GameObject.Find("FrogTeleportTarget");
 					if(FrogTeleportTarget){
 						player.transform.position = FrogTeleportTarget.transform.position;
@@ -99,6 +117,10 @@ public class ReactionScript : MonoBehaviour
 			}
 		}
 
+		foreach (var item in current_state)
+		{
+		    Debug.Log(item.Key.name + " state: " + item.Value);
+		}
 
 	}
 
@@ -113,14 +135,8 @@ public class ReactionScript : MonoBehaviour
 				ts.enabled=false;
 			}
 		}
-	}
-	private void disableTextScriptWithIndexForCharacter(GameObject character, int index){
-		Component[] text_scripts;
-		text_scripts = character.GetComponents<TextScript>();
-		foreach (TextScript ts in text_scripts){
-			if(ts.TextScript_index == index){
-				ts.enabled=false;
-			}
+		if(current_state.ContainsKey(character)) {
+			current_state[character]=index;
 		}
 	}
 
