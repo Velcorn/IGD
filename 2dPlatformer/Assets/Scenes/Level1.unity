@@ -5720,7 +5720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 438055101}
-  player: {fileID: 488658681}
+  player: {fileID: 492796492}
 --- !u!4 &222584296
 Transform:
   m_ObjectHideFlags: 0
@@ -26625,7 +26625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 696295283}
-  player: {fileID: 488658681}
+  player: {fileID: 492796492}
 --- !u!61 &1102295331
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49112,7 +49112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1213986732}
-  player: {fileID: 488658681}
+  player: {fileID: 492796492}
 --- !u!61 &2112812620
 BoxCollider2D:
   m_ObjectHideFlags: 0
