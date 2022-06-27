@@ -25,6 +25,8 @@ namespace UnityStandardAssets._2D
 		private GameObject overlapCharacter = null;
 		private BoxCollider2D boxCollider;
 		private string movement = "enableMovement";
+		private UnityEngine.UI.Image ActionKeyBackgroundImage;       
+		private TextMeshProUGUI ActionKeyTextMesh;
 
 		private void Awake()
 		{
@@ -34,6 +36,13 @@ namespace UnityStandardAssets._2D
 			m_Rigidbody2D = GetComponent<Rigidbody2D>();
 			boxCollider = GetComponent<BoxCollider2D>();
 
+			GameObject ActionKeyBackground = GameObject.Find("ActionKeyBackground");
+			ActionKeyBackgroundImage = ActionKeyBackground.GetComponent<UnityEngine.UI.Image>();
+			ActionKeyBackgroundImage.enabled = false;
+
+			GameObject ActionKeyText = GameObject.Find("ActionKeyText");
+			ActionKeyTextMesh = ActionKeyText.GetComponent<TextMeshProUGUI>();
+			ActionKeyTextMesh.enabled = false;
 		}
 
 		private void OnTriggerEnter2D(Collider2D collider){
@@ -42,6 +51,8 @@ namespace UnityStandardAssets._2D
 			}
 			if(collider.gameObject.layer==LayerMask.NameToLayer(m_CharactersLayer)){
 				overlapCharacter = collider.gameObject;
+				ActionKeyBackgroundImage.enabled = true;
+				ActionKeyTextMesh.enabled = true;
 			}
 		}
 
@@ -53,6 +64,8 @@ namespace UnityStandardAssets._2D
 				TextScript ts = overlapCharacter.GetComponent<TextScript>();
 				ts.resetAndHideAll();
 				overlapCharacter = null;
+				ActionKeyBackgroundImage.enabled = false;
+				ActionKeyTextMesh.enabled = false;
 			}
 		}
 
