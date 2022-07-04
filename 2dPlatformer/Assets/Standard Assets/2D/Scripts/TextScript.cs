@@ -24,18 +24,7 @@ public class TextScript : MonoBehaviour
 	private int currentChoice = 0;
 	private bool showingChoices = false;
 	private GameObject character = null;
-	private Animator anim;
-	private GameObject selene;
-	private bool explode = false;
 
-
-	// Start is called before the first frame update
-	void Start()
-	{
-		anim = GetComponent<Animator>();
-		selene = GameObject.Find("Selene");
-	}
-	
 	void Awake()
 	{
 		GameObject speechBubbleBackground = GameObject.Find("SpeechBubbleBackground");
@@ -86,12 +75,6 @@ public class TextScript : MonoBehaviour
 					}
 				}
 			}
-			
-			// Update bool so Selene can explode
-			if (character.name == "Selene")
-			{
-				explode = true;
-			}
 		}
 	}
 
@@ -112,16 +95,6 @@ public class TextScript : MonoBehaviour
 		hideChoices();
 		interactionCounter = 0;
 		character = null;
-		
-		// Jan: Add explosion-handling on Selene
-		if (selene != null)
-		{
-			if (explode)
-			{
-				anim.Play("seleneExplosionAnimation");
-				Destroy(selene, 2.0f);	
-			}
-		}
 	}
 
 	public string interaction(GameObject overlapCharacter)

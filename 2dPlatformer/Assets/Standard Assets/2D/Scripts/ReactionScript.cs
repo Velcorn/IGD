@@ -9,18 +9,25 @@ public class ReactionScript : MonoBehaviour
 	private GameObject frog;
 	private GameObject shaman;
 	private GameObject bat;
+	private GameObject selene;
+
+	private Animator anim;
 	public static Dictionary<GameObject, int> current_state;
 	
 	void Awake(){
 		frog = GameObject.Find("NinjaFrog");
 		shaman = GameObject.Find("MaskGuy");
 		bat = GameObject.Find("TalkingBat");
+		selene = GameObject.Find("Selene");
 
 		current_state = new Dictionary<GameObject, int>(){
 			{frog, 0},
 			{shaman, 0},
-			{bat, 0}
+			{bat, 0},
+			{selene, 0}
 		};
+
+		anim = GetComponent<Animator>();
 	}
 
 	public void react(int reaction_index, string reacting_to)
@@ -49,6 +56,11 @@ public class ReactionScript : MonoBehaviour
 						enableTextScriptWithIndexForCharacter(frog, 3);
 					} 
 					current_state[gameObject] += 1;
+				}
+				else if (gameObject == selene)
+				{
+					anim.Play("seleneExplosionAnimation");
+					Destroy(selene, 2.0f);	
 				}
 			}
 			if (reacting_to == "correct"){
