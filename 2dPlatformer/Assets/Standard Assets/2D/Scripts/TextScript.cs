@@ -119,7 +119,7 @@ public class TextScript : MonoBehaviour
 			if (explode)
 			{
 				anim.Play("seleneExplosionAnimation");
-				Destroy(selene, 1.0f);	
+				Destroy(selene, 2.0f);	
 			}
 		}
 	}
