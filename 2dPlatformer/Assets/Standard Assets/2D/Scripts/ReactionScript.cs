@@ -24,7 +24,6 @@ public class ReactionScript : MonoBehaviour
 			{frog, 0},
 			{shaman, 0},
 			{bat, 0},
-			{selene, 0}
 		};
 
 		anim = GetComponent<Animator>();
@@ -59,6 +58,7 @@ public class ReactionScript : MonoBehaviour
 				}
 				else if (gameObject == selene)
 				{
+					Destroy(selene.GetComponent<TextScript>());
 					anim.Play("seleneExplosionAnimation");
 					Destroy(selene, 2.0f);	
 				}
@@ -149,7 +149,7 @@ public class ReactionScript : MonoBehaviour
 
 		foreach (var item in current_state)
 		{
-		    Debug.Log(item.Key.name + " state: " + item.Value);
+		    //Debug.Log(item.Key.name + " state: " + item.Value);
 		}
 
 	}

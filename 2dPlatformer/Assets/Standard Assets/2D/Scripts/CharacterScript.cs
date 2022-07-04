@@ -72,6 +72,10 @@ namespace UnityStandardAssets._2D
 
 		private void FixedUpdate()
 		{
+			if(overlapCharacter == null){
+				ActionKeyBackgroundImage.enabled = false;
+				ActionKeyTextMesh.enabled = false;
+			}
 
 			m_Grounded = false;
 			transform.parent = null;
