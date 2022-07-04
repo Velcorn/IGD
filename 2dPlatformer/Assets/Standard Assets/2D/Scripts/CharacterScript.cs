@@ -167,17 +167,19 @@ namespace UnityStandardAssets._2D
 
 		public void Interact()
 		{
-			if (overlapCharacter!=null)
+			if (overlapCharacter != null)
 			{
 				Component[] text_scripts;
 				text_scripts = overlapCharacter.GetComponents<TextScript>();
 				TextScript ts = null;
-				foreach (TextScript script in text_scripts){
-					if(script.enabled==true){
+				foreach (TextScript script in text_scripts)
+				{
+					if (script.enabled == true)
+					{
 						ts = script;
 					}
 				}
-				if(ts!=null)
+				if (ts != null)
 				{
 					movement = ts.interaction(overlapCharacter);
 				}

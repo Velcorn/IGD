@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-    void OnCollisionEnter2D(Collision2D other)
+    private Animator anim;
+    
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+        anim.GetComponent<Animator>().enabled = false;
+    }
+    
+    private void OnCollisionEnter2D(Collision2D other)
     {
         Physics2D.IgnoreCollision(other.collider, GetComponent<Collider2D>());
-        GetComponent<SpriteRenderer>().color = Color.green;
+        anim.GetComponent<Animator>().enabled = true;
     }
 }
