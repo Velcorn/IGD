@@ -97,6 +97,7 @@ namespace UnityStandardAssets._2D
 				if (colliders[i].gameObject != gameObject)
 				{
 					m_Grounded = true;
+					m_Anim.SetBool("jump", false);
 					//move player with platform by setting the platform as parent
 					if (colliders[i].gameObject.layer==LayerMask.NameToLayer(m_PlatformsLayer))
 					{
@@ -147,7 +148,7 @@ namespace UnityStandardAssets._2D
 				{
 					// Add a vertical force to the player.
 					m_Grounded = false;
-					//m_Anim.SetBool("Ground", false);
+					m_Anim.SetBool("jump", true);
 					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 				}
 			}
