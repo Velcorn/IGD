@@ -60,7 +60,7 @@ public class ReactionScript : MonoBehaviour
 				{
 					Destroy(selene.GetComponent<TextScript>());
 					anim.Play("seleneExplosionAnimation");
-					Destroy(selene, 2.0f);	
+					Destroy(selene, 1.0f);	
 				}
 			}
 			if (reacting_to == "correct"){
