@@ -11,6 +11,8 @@ public class ReactionScript : MonoBehaviour
 	private GameObject bat;
 	private GameObject selene;
 	private GameObject ghost;
+	private GameObject turtle;
+	private GameObject talisman;
 
 	private Animator anim;
 	public static Dictionary<GameObject, int> current_state;
@@ -21,12 +23,16 @@ public class ReactionScript : MonoBehaviour
 		bat = GameObject.Find("TalkingBat");
 		selene = GameObject.Find("Selene");
 		ghost = GameObject.Find("Ghost");
+		turtle = GameObject.Find("Turtle");
+		talisman = GameObject.Find("Gegenstand");
 
 		current_state = new Dictionary<GameObject, int>(){
 			{frog, 0},
 			{shaman, 0},
 			{bat, 0},
 			{ghost, 0},
+			{turtle, 0},
+			{talisman, 0}
 		};
 
 		anim = GetComponent<Animator>();
@@ -69,6 +75,11 @@ public class ReactionScript : MonoBehaviour
 				{
 					enableTextScriptWithIndexForCharacter(ghost, 1);
 				}
+				else if (gameObject == turtle)
+				{
+					enableTextScriptWithIndexForCharacter(turtle, 1);
+					enableTextScriptWithIndexForCharacter(talisman, 1);
+				}
 			}
 			if (reacting_to == "correct"){
 			}
@@ -80,6 +91,16 @@ public class ReactionScript : MonoBehaviour
 		{
 			if (reacting_to == "talked")
 			{
+				if (gameObject == talisman)
+				{
+					if (current_state[turtle] == 1)
+					{
+						current_state.Remove(talisman);
+						Destroy(talisman.GetComponent<TextScript>());
+						Destroy(talisman);
+						enableTextScriptWithIndexForCharacter(turtle, 2);
+					}
+				}
 			}
 			if (reacting_to == "correct")
 			{
@@ -156,7 +177,7 @@ public class ReactionScript : MonoBehaviour
 
 		foreach (var item in current_state)
 		{
-		    //Debug.Log(item.Key.name + " state: " + item.Value);
+			Debug.Log(item.Key.name + " state: " + item.Value);
 		}
 
 	}
