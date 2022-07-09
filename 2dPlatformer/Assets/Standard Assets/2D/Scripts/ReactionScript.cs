@@ -13,6 +13,7 @@ public class ReactionScript : MonoBehaviour
 	private GameObject ghost;
 	private GameObject turtle;
 	private GameObject talisman;
+	private GameObject frog_2;
 
 	private Animator anim;
 	public static Dictionary<GameObject, int> current_state;
@@ -25,6 +26,7 @@ public class ReactionScript : MonoBehaviour
 		ghost = GameObject.Find("Ghost");
 		turtle = GameObject.Find("Turtle");
 		talisman = GameObject.Find("Gegenstand");
+		frog_2 = GameObject.Find("NinjaFrog_2");
 
 		current_state = new Dictionary<GameObject, int>(){
 			{frog, 0},
@@ -32,7 +34,8 @@ public class ReactionScript : MonoBehaviour
 			{bat, 0},
 			{ghost, 0},
 			{turtle, 0},
-			{talisman, 0}
+			{talisman, 0},
+			{frog_2,0}
 		};
 
 		anim = GetComponent<Animator>();
@@ -74,6 +77,7 @@ public class ReactionScript : MonoBehaviour
 				else if (gameObject == ghost)
 				{
 					enableTextScriptWithIndexForCharacter(ghost, 1);
+					enableTextScriptWithIndexForCharacter(frog_2, 1);
 				}
 				else if (gameObject == turtle)
 				{
@@ -115,6 +119,16 @@ public class ReactionScript : MonoBehaviour
 						enableTextScriptWithIndexForCharacter(frog,2);
 					}
 				}
+				if (gameObject == frog_2)
+				{
+					if(current_state[turtle]<2){
+						enableTextScriptWithIndexForCharacter(frog_2,2);
+					}
+					else
+					{
+						enableTextScriptWithIndexForCharacter(frog_2,3);
+					}
+				}
 			}
 			else if (reacting_to == "wrong")
 			{
@@ -124,6 +138,18 @@ public class ReactionScript : MonoBehaviour
 					if (FrogTeleportTarget)
 					{
 						player.transform.position = FrogTeleportTarget.transform.position;
+					}
+					else
+					{
+						Debug.Log("teleport target not found");
+					}
+				}
+				if (gameObject == frog_2)
+				{
+					GameObject Frog_2TeleportTarget = GameObject.Find("Frog_2TeleportTarget");
+					if (Frog_2TeleportTarget)
+					{
+						player.transform.position = Frog_2TeleportTarget.transform.position;
 					}
 					else
 					{
