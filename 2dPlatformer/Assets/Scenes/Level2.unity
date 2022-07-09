@@ -2405,6 +2405,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Baum_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3538541578404022773, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538541578404022773, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
 --- !u!1001 &215448486
@@ -2985,6 +2993,10 @@ PrefabInstance:
     - target: {fileID: 4651710677713866843, guid: 94018c6bd17ad6b41bc52362c48fa039, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651710678643895151, guid: 94018c6bd17ad6b41bc52362c48fa039, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94018c6bd17ad6b41bc52362c48fa039, type: 3}
@@ -6827,6 +6839,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2119077051}
     m_Modifications:
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
+      objectReference: {fileID: 0}
     - target: {fileID: 6470666598531796317, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
       propertyPath: m_Name
       value: Baum_2_foreground (4)
@@ -7615,6 +7635,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2119077051}
     m_Modifications:
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
+      objectReference: {fileID: 0}
     - target: {fileID: 6470666598531796317, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
       propertyPath: m_Name
       value: Baum_2_foreground (5)
@@ -8258,6 +8286,233 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4190beefc06d47341908ac1dfd5f865f, type: 3}
+--- !u!1 &728765866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 728765867}
+  - component: {fileID: 728765874}
+  - component: {fileID: 728765873}
+  - component: {fileID: 728765872}
+  - component: {fileID: 728765871}
+  - component: {fileID: 728765870}
+  - component: {fileID: 728765869}
+  - component: {fileID: 728765868}
+  m_Layer: 7
+  m_Name: Turtle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &728765867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728765866}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 225.4, y: 24.8, z: 0}
+  m_LocalScale: {x: 4.63, y: 4.63, z: 4.63}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 899341555}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &728765868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728765866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81714f0833ce5c6de9e6c9ce7872f406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!114 &728765869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728765866}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 2
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 
+  sentences:
+  - 'Turtle: oh you found my talisman!'
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 0
+  reaction_script: {fileID: 728765868}
+--- !u!114 &728765870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728765866}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 1
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 
+  sentences:
+  - "Turtle: oh\u2026Where is my talisman?"
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 0
+  reaction_script: {fileID: 728765868}
+--- !u!114 &728765871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728765866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 0
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 030000000500000007000000
+  sentences:
+  - 'Turtle: oh ..'
+  - "Turtle: ...argg\u2026"
+  - 'Turtle: Oh you can''t scare me like that!'
+  - 'Emily: Sorry, is everything okay?'
+  - 'Turtle: No, it''s so dark here and I feel so helpless. I am lost..as always..and
+    my talisman is gone.'
+  - 'Emily: Oh..did you lose it here in the cave?'
+  - 'Turtle: Yes, can you find it for me?'
+  - 'Emily: Sure, I''ll help you. I search for it.'
+  - 'Turtle: thank you.. *shiver* '
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 0
+  reaction_script: {fileID: 728765868}
+--- !u!61 &728765872
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728765866}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000014901161, y: -0.026535079}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.44, y: 0.26}
+    newSize: {x: 0.44, y: 0.26}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.333861, y: 0.20692983}
+  m_EdgeRadius: 0
+--- !u!95 &728765873
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728765866}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: da744ab828243fe74804153d3e3e5bbc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &728765874
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728765866}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 6190290184256176644, guid: a9c658600a401f347888cfd916603aa4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.44, y: 0.26}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &729757918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9237,6 +9492,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4190beefc06d47341908ac1dfd5f865f, type: 3}
+--- !u!4 &814215044 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4651710677713866823, guid: 94018c6bd17ad6b41bc52362c48fa039, type: 3}
+  m_PrefabInstance: {fileID: 270760483}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &818589489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9898,6 +10158,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2119077051}
     m_Modifications:
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
+      objectReference: {fileID: 0}
     - target: {fileID: 6470666598531796317, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
       propertyPath: m_Name
       value: Baum_2_foreground (3)
@@ -10476,6 +10744,45 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 363d054c9526c084bb7999704c2827ac, type: 3}
+--- !u!1 &899341554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 899341555}
+  m_Layer: 0
+  m_Name: NPCs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &899341555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899341554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1489701728}
+  - {fileID: 1678863519}
+  - {fileID: 1257695082}
+  - {fileID: 1635808183}
+  - {fileID: 1603042639}
+  - {fileID: 1007831923}
+  - {fileID: 728765867}
+  - {fileID: 1074780079}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &903429392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10935,6 +11242,230 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac527b45262198448592cd310972ccd, type: 3}
+--- !u!1 &1007831922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1007831923}
+  - component: {fileID: 1007831929}
+  - component: {fileID: 1007831928}
+  - component: {fileID: 1007831927}
+  - component: {fileID: 1007831926}
+  - component: {fileID: 1007831925}
+  - component: {fileID: 1007831924}
+  m_Layer: 7
+  m_Name: Ghost
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1007831923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007831922}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 218.5, y: 22.6, z: 0}
+  m_LocalScale: {x: 4.99, y: 4.99, z: 4.99}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 899341555}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1007831924
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007831922}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.44, y: 0.3}
+    newSize: {x: 0.44, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.3}
+  m_EdgeRadius: 0
+--- !u!114 &1007831925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007831922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81714f0833ce5c6de9e6c9ce7872f406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!114 &1007831926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007831922}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 1
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 0100000004000000070000000a0000000d0000000f0000001100000014000000
+  sentences:
+  - 'Gilbert: Thank you for your kindness, now I have found the courage to continue.
+    Hurry up now, see you at the finish!'
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 0
+  reaction_script: {fileID: 1007831925}
+--- !u!114 &1007831927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007831922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 0
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 0100000004000000070000000a0000000b0000000d0000000f0000001100000014000000
+  sentences:
+  - 'Ghost: Oh, you have to go through this too?'
+  - 'Emily: Ehm yea I guess, I just made it through the first guard-frog.'
+  - "Ghost: \u201Cha..okay..\u201D"
+  - ...
+  - 'Emily: Is everything okay with you? You seem to be standing here for a while
+    already.'
+  - 'Ghost: ...'
+  - I don't want to keep playing these stupid games...I just want it all to stop.
+  - 'Emily: Hmm I can understand that. I also do not have such a desire for it here.'
+  - 'Ghost: No you don''t understand me. I don''t want anything anymore. '
+  - "I just want to go to bed and never wake up again. I don't have the strength,
+    just nothing\u2026"
+  - 'Emily: Oh..but I do, I understand you already..I''m here for a reason..I''m
+    not feeling so well either..'
+  - But it seems like we really have no choice but to move on. How long have you
+    been in here?
+  - 'Ghost: For a long time..but it''s just too much for me.'
+  - 'Emily: Come on..you''ve come a long way..me too - we''ve both come a long way!'
+  - 'Ghost: Hmm..'
+  - 'Emily: Otherwise, do you want to try it together?  Don''t give up on yourself,
+    you seem really nice! What is your name?'
+  - 'Ghost: Hm..thanks you are also very kind. Gilbert, how about you?'
+  - 'Emily: I''m Emily! Nice to meet you!'
+  - 'Gilbert: Haha thanks. That helped somehow. Okay Emily, let''s give it a try
+    then. I want to find you back at the finish line first though.'
+  - "I'll see you there okay? To a race?\u201D"
+  - 'Emily: Haha okay, sounds good. It was really nice to meet you. And now I have
+    something to look forward to at the end. See you later Gilbert!'
+  - 'Gilbert: Me too, see you there! Go ahead, you''ll need the head start - don''t
+    worry, I''ll catch up with you in a minute!'
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 0
+  reaction_script: {fileID: 1007831925}
+--- !u!95 &1007831928
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007831922}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4b008fb8bb6326a0d9ce0778b2ae1628, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &1007831929
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007831922}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 4740742658319907719, guid: d4f2f936f814df24fb7559370c465cdc, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.44, y: 0.3}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1009664294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11722,6 +12253,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2119077051}
     m_Modifications:
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
+      objectReference: {fileID: 0}
     - target: {fileID: 6470666598531796317, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
       propertyPath: m_Name
       value: Baum_2_foreground (7)
@@ -11845,6 +12384,268 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4190beefc06d47341908ac1dfd5f865f, type: 3}
+--- !u!1 &1074780078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1074780079}
+  - component: {fileID: 1074780087}
+  - component: {fileID: 1074780086}
+  - component: {fileID: 1074780085}
+  - component: {fileID: 1074780084}
+  - component: {fileID: 1074780083}
+  - component: {fileID: 1074780082}
+  - component: {fileID: 1074780081}
+  - component: {fileID: 1074780080}
+  m_Layer: 7
+  m_Name: NinjaFrog_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1074780079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074780078}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 314.9, y: 42.5, z: 0}
+  m_LocalScale: {x: 5.5, y: 5.5, z: 5.5}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 899341555}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1074780080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074780078}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 3
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 
+  sentences:
+  - 'Let''s move on to the second question. '
+  - What feelings do people with depression associate with the future?
+  answer_choices:
+  - Things can get better in the future.
+  - Do not think about the future.
+  - Fear that the future can only end badly.
+  - Sometimes good, sometimes bad.
+  conclusion_right:
+  - Very well! Fears of the future accompany people with depression.
+  conclusion_wrong:
+  - This is wrong, you will be teleported back!
+  correct_answer_index: 2
+  reaction_script: {fileID: 1074780084}
+--- !u!114 &1074780081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074780078}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 2
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 
+  sentences:
+  - You should look down first. You will find something in the darkness
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 0
+  reaction_script: {fileID: 1074780084}
+--- !u!114 &1074780082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074780078}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 1
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 
+  sentences:
+  - Hey! I am one of the Guard Frogs! You've almost completed the first area. But
+    you still have to prove yourself to me to get further. For that you have to answer
+    3 questions..
+  - So let's get started..
+  - People with depression suffer a lot from their illness and give up on themselves.
+    They often also lose the desire to live.
+  - How can an outsider motivate a person with depression to see a psychologist?
+  answer_choices:
+  - Do not help. People with depression just need time to get their act together.
+  - Talk to the person, listen to them, and together contact a doctor who can support
+    you.
+  - Give the person a cookie
+  conclusion_right:
+  - Right! We need to support this person. In case of emergency, this person must
+    also be forced to accept help
+  conclusion_wrong:
+  - Thats sadly the wrong answer. You will be teleported back.
+  correct_answer_index: 1
+  reaction_script: {fileID: 1074780084}
+--- !u!114 &1074780083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074780078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 0
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 
+  sentences:
+  - Better look down the well again before you look any further here.
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 0
+  reaction_script: {fileID: 1074780084}
+--- !u!114 &1074780084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074780078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81714f0833ce5c6de9e6c9ce7872f406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!61 &1074780085
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074780078}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.044210523}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.23, y: 0.2215789}
+  m_EdgeRadius: 0
+--- !u!95 &1074780086
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074780078}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e90d9939654b58744a9b6091da3366f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &1074780087
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074780078}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1252256797
+  m_SortingLayer: -1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -6367560908665664636, guid: aa46f18c162836545be8886a1e13b097, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.32, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1090423227
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13022,6 +13823,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2119077051}
     m_Modifications:
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
+      objectReference: {fileID: 0}
     - target: {fileID: 6470666598531796317, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
       propertyPath: m_Name
       value: Baum_2_foreground (6)
@@ -14843,6 +15652,231 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4190beefc06d47341908ac1dfd5f865f, type: 3}
+--- !u!1 &1257695081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1257695082}
+  - component: {fileID: 1257695088}
+  - component: {fileID: 1257695087}
+  - component: {fileID: 1257695086}
+  - component: {fileID: 1257695085}
+  - component: {fileID: 1257695084}
+  - component: {fileID: 1257695083}
+  m_Layer: 7
+  m_Name: MaskGuy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1257695082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257695081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 107.46, y: 16.75, z: 0}
+  m_LocalScale: {x: 5.5, y: 5.5000005, z: 5.5}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 899341555}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1257695083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257695081}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 2
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 0100000004000000060000000a0000000e000000
+  sentences:
+  - 'Tom: You may feel loss of interest and joylessness, but don''t give up on yourself.
+    The future will be fine. You will be able to find the joy of life again - Just
+    like me.'
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 1
+  reaction_script: {fileID: 1257695085}
+--- !u!114 &1257695084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257695081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 0
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 0100000004000000060000000a0000000e000000
+  sentences:
+  - 'Shaman: Hey you! Don''t worry, I''m nicer than I look. What''s your name?'
+  - 'Emily: I am Emily. Who are you? What are you doing in this dark place?'
+  - 'Shaman: Well, my name is Tom. I was once here for the same reason as you: I
+    had my problems.'
+  - But I managed to deal with it and understand what I had. Do you know why you
+    are here? What is troubling you?
+  - 'Emily: ...'
+  - I understand, it's not easy to talk about your problems. Especially with a stranger...
+    Courage girl, I just want to help you.
+  - 'Emily: I find it hard to put into words. It all just feels bad. I don''t want
+    to get up anymore, everything is too hard for me and I''m too stupid for anything.'
+  - 'Tom: Emily you are not stupid! But what you''re telling me reminds me a lot
+    of my old self.'
+  - I also felt a depressed, depressive mood. I felt a lack of drive and felt tired.
+    Feelings of guilt and worthlessness have also not been uncommon there.
+  - It also sounds like you feel worthless yourself. Is that true?
+  - "Emily: Yes... but I understand what you're getting at. And you seem to be right.
+    I had a talk with the school psychologist this morning and she told me that I
+    could be depressed\u2026"
+  - 'Tom: Ah, okay. There are many symptoms of depression such as loss of interest
+    and joylessness - The things you''re feeling right now..I''ve felt those too.'
+  - You may feel helplessness, worthlessness and guilt. And think that the future
+    will only end badly and everything is hopeless. But it is not hopeless!
+  - I was able to free myself from these thoughts and feelings. I am well again and
+    today I am there for others - Like for you!
+  - 'Emily: ...'
+  - 'Tom: Don''t give up on yourself. The future will be fine. You will be able to
+    find the joy of life again - Just like me.'
+  - First, this cave will steer you on the right path. Try to get past the frog first.
+    I believe in you!
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 1
+  reaction_script: {fileID: 1257695085}
+--- !u!114 &1257695085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257695081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81714f0833ce5c6de9e6c9ce7872f406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!61 &1257695086
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257695081}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.01924847, y: -0.030000001}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.2684969, y: 0.28}
+  m_EdgeRadius: 0
+--- !u!95 &1257695087
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257695081}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 577f70087fb62234f93bec19bbc230c7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &1257695088
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257695081}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1252256797
+  m_SortingLayer: -1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -6367560908665664636, guid: 3750f45c844123341b9a777a96cb1eca, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.32, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1260463384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15586,6 +16620,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2119077051}
     m_Modifications:
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
+      objectReference: {fileID: 0}
     - target: {fileID: 6470666598531796317, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
       propertyPath: m_Name
       value: Baum_2_foreground (10)
@@ -15980,6 +17022,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2119077051}
     m_Modifications:
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
+      objectReference: {fileID: 0}
     - target: {fileID: 6470666598531796317, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
       propertyPath: m_Name
       value: Baum_2_foreground (1)
@@ -16630,6 +17680,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2119077051}
     m_Modifications:
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
+      objectReference: {fileID: 0}
     - target: {fileID: 6470666598531796317, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
       propertyPath: m_Name
       value: Baum_2_foreground (11)
@@ -17221,6 +18279,184 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4190beefc06d47341908ac1dfd5f865f, type: 3}
+--- !u!1 &1489701727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1489701728}
+  - component: {fileID: 1489701733}
+  - component: {fileID: 1489701732}
+  - component: {fileID: 1489701731}
+  - component: {fileID: 1489701730}
+  - component: {fileID: 1489701729}
+  m_Layer: 7
+  m_Name: Selene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1489701728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489701727}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.9, y: 3.27, z: 0}
+  m_LocalScale: {x: 4.6115274, y: 7.3151937, z: 0.75}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 899341555}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1489701729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489701727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81714f0833ce5c6de9e6c9ce7872f406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!114 &1489701730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489701727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 0
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 
+  sentences:
+  - 'Selene: You did well, Emily! '
+  - 'Selene: Welcome to the Downearth.'
+  - 'Selene: I''ve noticed you''ve been feeling pretty down lately, so I''ve brought
+    you here so you can learn to feel better!'
+  - 'Selene: This well is a cave is a magical place where you will learn about anxiety
+    & depression and some useful tips & tricks on how to deal with them!'
+  - 'Selene: Don''t be afraid to talk to the creatures you will encounter on your
+    way, they are here to guide and help you on your journey.'
+  - 'Selene: Good luck, I believe in you!'
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 1
+  reaction_script: {fileID: 1489701729}
+--- !u!61 &1489701731
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489701727}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.009772092, y: -0.11204603}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.81, y: 0.66}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4158495, y: 0.44604164}
+  m_EdgeRadius: 0
+--- !u!95 &1489701732
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489701727}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 45d513d9319bd0248b5b838439a17792, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &1489701733
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489701727}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1252256797
+  m_SortingLayer: -1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 0c95faed3aa5a43d3b19f112f0843c87, type: 3}
+  m_Color: {r: 1, g: 0.75, b: 0.7615241, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.32, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1495553932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18591,6 +19827,178 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 560222ad2c43ca14ab0d0dbfe69042d7, type: 3}
+--- !u!1 &1603042638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1603042639}
+  - component: {fileID: 1603042644}
+  - component: {fileID: 1603042643}
+  - component: {fileID: 1603042642}
+  - component: {fileID: 1603042641}
+  - component: {fileID: 1603042640}
+  m_Layer: 7
+  m_Name: PinkMan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1603042639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603042638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 161.32, y: 14, z: 0}
+  m_LocalScale: {x: 4.31035, y: 3.9539504, z: 5.5}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 899341555}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1603042640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603042638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81714f0833ce5c6de9e6c9ce7872f406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!114 &1603042641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603042638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 0
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 01000000
+  sentences:
+  - 'Pinkman: It''s way too dark in here!'
+  - 'Emily: I can see light comming from the right, I think it is better there.'
+  - 'Pinkman: ugh..I''m going to wait a little bit here. Later I will make it!'
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 1
+  reaction_script: {fileID: 1603042640}
+--- !u!61 &1603042642
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603042638}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
+--- !u!95 &1603042643
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603042638}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7fdd77a2613fa4544b709bb31aae633f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &1603042644
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603042638}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1252256797
+  m_SortingLayer: -1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -6367560908665664636, guid: d348dff3819df794186a80cb95777629, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.32, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1607052392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19046,6 +20454,266 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac527b45262198448592cd310972ccd, type: 3}
+--- !u!1 &1635808182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1635808183}
+  - component: {fileID: 1635808191}
+  - component: {fileID: 1635808190}
+  - component: {fileID: 1635808189}
+  - component: {fileID: 1635808188}
+  - component: {fileID: 1635808187}
+  - component: {fileID: 1635808186}
+  - component: {fileID: 1635808185}
+  - component: {fileID: 1635808184}
+  m_Layer: 7
+  m_Name: NinjaFrog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1635808183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635808182}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 127.6, y: 15.5, z: 0}
+  m_LocalScale: {x: 5.5, y: 5.5, z: 5.5}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 899341555}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1635808184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635808182}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 3
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 
+  sentences:
+  - 'Let''s move on to the second question:'
+  - What are typical symptoms of depression?
+  answer_choices:
+  - Laziness and arrogance
+  - Hallucinations and hearing voices
+  - Migraine and fever
+  - Loss of interest and joylessness
+  conclusion_right:
+  - That's right. So you have successfully answered my questions. I will now let
+    you pass.
+  - Good luck on your further way!
+  conclusion_wrong:
+  - This is the wrong answer. You will be teleported back to the beginning.
+  correct_answer_index: 3
+  reaction_script: {fileID: 1635808188}
+--- !u!114 &1635808185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635808182}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 2
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 
+  sentences:
+  - To answer the second question you should look again above.
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 0
+  reaction_script: {fileID: 1635808188}
+--- !u!114 &1635808186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635808182}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 1
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 
+  sentences:
+  - Hey, I'm one of the guard frogs. We'll keep you from moving forward if you can't
+    answer our questions.
+  - So then to the first question.
+  - What is the percentage of people experiencing mental health problems?
+  answer_choices:
+  - One in four
+  - One in ten
+  - One out of a hundred
+  conclusion_right:
+  - Very good! Never forget, you are not alone with your problems!
+  conclusion_wrong:
+  - This is the wrong answer. You will be teleported back to the beginning.
+  correct_answer_index: 0
+  reaction_script: {fileID: 1635808188}
+--- !u!114 &1635808187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635808182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 0
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 
+  sentences:
+  - Hey my dear. You've come a long way, but you don't seem ready for my task.
+  - Look back once more..
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 0
+  reaction_script: {fileID: 1635808188}
+--- !u!114 &1635808188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635808182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81714f0833ce5c6de9e6c9ce7872f406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!61 &1635808189
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635808182}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.03}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.23, y: 0.23}
+  m_EdgeRadius: 0
+--- !u!95 &1635808190
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635808182}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: acb65720c8d948eb295066037f0bee5d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &1635808191
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635808182}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1252256797
+  m_SortingLayer: -1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -6367560908665664636, guid: cd947491a13509945aa1b644f9db3ef2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.32, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1638270365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19436,6 +21104,212 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4190beefc06d47341908ac1dfd5f865f, type: 3}
+--- !u!1 &1678863518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1678863519}
+  - component: {fileID: 1678863525}
+  - component: {fileID: 1678863524}
+  - component: {fileID: 1678863523}
+  - component: {fileID: 1678863522}
+  - component: {fileID: 1678863521}
+  - component: {fileID: 1678863520}
+  m_Layer: 7
+  m_Name: TalkingBat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1678863519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678863518}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 69.62, y: 11.75, z: 0}
+  m_LocalScale: {x: 0.69, y: 0.69, z: 0.69}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 899341555}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1678863520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678863518}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 2
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 
+  sentences:
+  - 'Michael: Remember, you are not alone with those feelings. Many people struggle
+    with them. About one in four people are living with a mental disorder.'
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 0
+  reaction_script: {fileID: 1678863522}
+--- !u!114 &1678863521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678863518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextScript_index: 0
+  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
+  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  idxs_of_sents_with_standard_font: 010000000300000005000000
+  sentences:
+  - 'Bat: Hello, you. I am Michael, the bat.'
+  - 'Emily: Hi, Michael, I''m Emily. It''s strange to talk to a bat.'
+  - 'Michael: Oh, don''t worry, I don''t bite. Many who wake up here are frightened.'
+  - 'Emily: Hmm, yes. I must admit it was pretty scary at first.'
+  - 'Michael: I''m sorry, I hope you''re a bit better now. Why do you think you''ve
+    been brought here?'
+  - 'Emily: I don''t really know... Life just feels overwhelming, like everything
+    is too much. School is a burden. The last couple of days I couldn''t even get
+    out of bed... Why am I even telling you all of this...'
+  - 'Michael: Hey, hey, don''t worry. You are not alone with those feelings. Many
+    people struggle with them. About one in four people are living with a mental
+    disorder, with anxiety and depressive disorders being the most common! '
+  answer_choices: []
+  conclusion_right: []
+  conclusion_wrong: []
+  correct_answer_index: 0
+  reaction_script: {fileID: 1678863522}
+--- !u!114 &1678863522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678863518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81714f0833ce5c6de9e6c9ce7872f406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!95 &1678863523
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678863518}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b7cca8c75124c24408be704ae7e2a537, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &1678863524
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678863518}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.2}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.3803067, y: 2.3349998}
+    newSize: {x: 2.0354524, y: 2.2649999}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0354524, y: 3.5}
+  m_EdgeRadius: 0
+--- !u!212 &1678863525
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678863518}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1252256797
+  m_SortingLayer: -1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300036, guid: 437a9b349bd1bed4f96857c3634fbef4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.0354524, y: 2.2649999}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1683716029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19898,6 +21772,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2119077051}
     m_Modifications:
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
+      objectReference: {fileID: 0}
     - target: {fileID: 6470666598531796317, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
       propertyPath: m_Name
       value: Baum_2_foreground (8)
@@ -21007,6 +22889,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2119077051}
     m_Modifications:
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
+      objectReference: {fileID: 0}
     - target: {fileID: 6470666598531796317, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
       propertyPath: m_Name
       value: Baum_2_foreground (2)
@@ -21983,6 +23873,90 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df6f70dfb7426264bbdbe648813d90b2, type: 3}
+--- !u!1 &1815579253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1815579255}
+  - component: {fileID: 1815579254}
+  m_Layer: 0
+  m_Name: lightness
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1815579254
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815579253}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1581152805
+  m_SortingLayer: -4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b09786f9c6dbb3c11a3ff9c838e1459c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2901961}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 19.2, y: 10.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1815579255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815579253}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 134.8208, y: 38.2049, z: 0}
+  m_LocalScale: {x: 18.85057, y: 7.36109, z: 7.54}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1818713711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22110,6 +24084,14 @@ PrefabInstance:
     - target: {fileID: 2426054597845877485, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
       propertyPath: m_Name
       value: Baum_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538541578404022773, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538541578404022773, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
@@ -23641,6 +25623,7 @@ GameObject:
   - component: {fileID: 1952396772}
   - component: {fileID: 1952396771}
   - component: {fileID: 1952396770}
+  - component: {fileID: 1952396773}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -23683,7 +25666,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10.020287
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -23706,14 +25689,31 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952396769}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0000009536743, y: -0.00000011920929, z: -10}
+  m_LocalScale: {x: 0.99999994, y: 1.0000001, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1952396773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952396769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d8238cc53530b64fbb7828c3d3bb591, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 814215044}
+  damping: 0.3
+  lookAheadFactor: 3
+  lookAheadReturnSpeed: 0.5
+  lookAheadMoveThreshold: 0.1
 --- !u!1 &1953360096
 GameObject:
   m_ObjectHideFlags: 0
@@ -23769,8 +25769,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1581152805
-  m_SortingLayer: -4
+  m_SortingLayerID: -1437668011
+  m_SortingLayer: -5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d07460b5590aa960580748cb0bacdf3b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -24195,6 +26195,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2119077051}
     m_Modifications:
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
+      objectReference: {fileID: 0}
     - target: {fileID: 6470666598531796317, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
       propertyPath: m_Name
       value: Baum_2_foreground (9)
@@ -25697,6 +27709,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Baum_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3538541578404022773, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538541578404022773, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
 --- !u!1001 &2102702182
@@ -25761,6 +27781,14 @@ PrefabInstance:
     - target: {fileID: 2426054597845877485, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
       propertyPath: m_Name
       value: Baum_1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538541578404022773, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538541578404022773, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
@@ -26091,6 +28119,14 @@ PrefabInstance:
     - target: {fileID: 2426054597845877485, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
       propertyPath: m_Name
       value: Baum_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538541578404022773, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538541578404022773, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
@@ -26560,6 +28596,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2119077051}
     m_Modifications:
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
+      objectReference: {fileID: 0}
     - target: {fileID: 6470666598531796317, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
       propertyPath: m_Name
       value: Baum_2_foreground
@@ -26745,6 +28789,14 @@ PrefabInstance:
     - target: {fileID: 2426054597845877485, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
       propertyPath: m_Name
       value: Baum_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538541578404022773, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
+      propertyPath: m_SortingLayer
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538541578404022773, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1437668011
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: befa91c9aa179fe48b3501b933b8c8e6, type: 3}

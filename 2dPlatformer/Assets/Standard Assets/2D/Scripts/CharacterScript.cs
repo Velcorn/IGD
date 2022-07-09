@@ -37,12 +37,18 @@ namespace UnityStandardAssets._2D
 			boxCollider = GetComponent<BoxCollider2D>();
 
 			GameObject ActionKeyBackground = GameObject.Find("ActionKeyBackground");
-			ActionKeyBackgroundImage = ActionKeyBackground.GetComponent<UnityEngine.UI.Image>();
-			ActionKeyBackgroundImage.enabled = false;
+			if(ActionKeyBackground)
+			{
+				ActionKeyBackgroundImage = ActionKeyBackground.GetComponent<UnityEngine.UI.Image>();
+				ActionKeyBackgroundImage.enabled = false;
+			}
 
 			GameObject ActionKeyText = GameObject.Find("ActionKeyText");
-			ActionKeyTextMesh = ActionKeyText.GetComponent<TextMeshProUGUI>();
-			ActionKeyTextMesh.enabled = false;
+			if(ActionKeyText)
+			{
+				ActionKeyTextMesh = ActionKeyText.GetComponent<TextMeshProUGUI>();
+				ActionKeyTextMesh.enabled = false;
+			}
 		}
 
 		private void OnTriggerEnter2D(Collider2D collider){
@@ -73,8 +79,11 @@ namespace UnityStandardAssets._2D
 		private void FixedUpdate()
 		{
 			if(overlapCharacter == null){
-				ActionKeyBackgroundImage.enabled = false;
-				ActionKeyTextMesh.enabled = false;
+				if(ActionKeyBackgroundImage != null)
+				{
+					ActionKeyBackgroundImage.enabled = false;
+					ActionKeyTextMesh.enabled = false;
+				}
 			}
 
 			m_Grounded = false;
