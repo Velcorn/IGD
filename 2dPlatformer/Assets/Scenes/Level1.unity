@@ -12134,7 +12134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27186,7 +27186,7 @@ MonoBehaviour:
   TextScript_index: 0
   character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
   standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  idxs_of_sents_with_standard_font: 0100000004000000070000000a0000000d0000000f0000001100000014000000
+  idxs_of_sents_with_standard_font: 0100000004000000070000000a0000000b0000000d0000000f0000001100000014000000
   sentences:
   - 'Ghost: Oh, you have to go through this too?'
   - 'Emily: Ehm yea I guess, I just made it through the first guard-frog.'
@@ -32834,12 +32834,12 @@ MonoBehaviour:
   standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   idxs_of_sents_with_standard_font: 
   sentences:
-  - Let's move on to the second question. What feelings do people with depression
-    associate with the future?
+  - 'Let''s move on to the second question. '
+  - What feelings do people with depression associate with the future?
   answer_choices:
   - Things can get better in the future.
-  - .Do not think about the future.
-  - Many fears that it can only end badly
+  - Do not think about the future.
+  - Fear that the future can only end badly.
   - Sometimes good, sometimes bad.
   conclusion_right:
   - Very well! Fears of the future accompany people with depression.

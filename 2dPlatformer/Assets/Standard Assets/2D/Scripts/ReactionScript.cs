@@ -103,6 +103,10 @@ public class ReactionScript : MonoBehaviour
 						Destroy(talisman.GetComponent<TextScript>());
 						Destroy(talisman);
 						enableTextScriptWithIndexForCharacter(turtle, 2);
+						if(current_state[frog_2]==2)
+						{
+							enableTextScriptWithIndexForCharacter(frog_2, 3);
+						}
 					}
 				}
 			}
@@ -146,10 +150,10 @@ public class ReactionScript : MonoBehaviour
 				}
 				if (gameObject == frog_2)
 				{
-					GameObject Frog_2TeleportTarget = GameObject.Find("Frog_2TeleportTarget");
-					if (Frog_2TeleportTarget)
+					GameObject Frog_2TeleportTarget1 = GameObject.Find("Frog_2TeleportTarget1");
+					if (Frog_2TeleportTarget1)
 					{
-						player.transform.position = Frog_2TeleportTarget.transform.position;
+						player.transform.position = Frog_2TeleportTarget1.transform.position;
 					}
 					else
 					{
@@ -183,6 +187,10 @@ public class ReactionScript : MonoBehaviour
 					BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
 					boxCollider.enabled = false;
 				}
+				if(gameObject == frog_2){
+					BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
+					boxCollider.enabled = false;
+				}
 			}
 			else if (reacting_to == "wrong")
 			{
@@ -192,6 +200,18 @@ public class ReactionScript : MonoBehaviour
 					if (FrogTeleportTarget)
 					{
 						player.transform.position = FrogTeleportTarget.transform.position;
+					}
+					else
+					{
+						Debug.Log("teleport target not found");
+					}
+				}
+				if (gameObject == frog_2)
+				{
+					GameObject Frog_2TeleportTarget2 = GameObject.Find("Frog_2TeleportTarget2");
+					if (Frog_2TeleportTarget2)
+					{
+						player.transform.position = Frog_2TeleportTarget2.transform.position;
 					}
 					else
 					{
