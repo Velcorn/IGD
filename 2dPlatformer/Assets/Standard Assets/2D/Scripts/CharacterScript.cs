@@ -90,6 +90,7 @@ namespace UnityStandardAssets._2D
 				{
 					ActionKeyBackgroundImage.enabled = false;
 					ActionKeyTextMesh.enabled = false;
+					movement = "enableMovement";
 				}
 			}
 
