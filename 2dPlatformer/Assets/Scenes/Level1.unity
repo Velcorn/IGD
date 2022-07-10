@@ -9406,8 +9406,9 @@ MonoBehaviour:
   idxs_of_sents_with_standard_font: 01000000
   sentences:
   - 'Pinkman: It''s way too dark in here!'
-  - 'Emily: I can see light comming from the right, I think it is better there.'
-  - 'Pinkman: ugh..I''m going to wait a little bit here. Later I will make it!'
+  - 'Emily: I can see light comming from the right, I think it''s better there.'
+  - 'Pinkman: Ugh... I''m going to rest here a bit. I will go on later!'
+  - 'Emily: It''s okay, take your time!'
   answer_choices: []
   conclusion_right: []
   conclusion_wrong: []
@@ -27058,8 +27059,8 @@ MonoBehaviour:
   idxs_of_sents_with_standard_font: 0100000004000000070000000a0000000b0000000d0000000f0000001100000014000000
   sentences:
   - 'Ghost: Oh, you have to go through this too?'
-  - 'Emily: Ehm yea I guess, I just made it through the first guard-frog.'
-  - "Ghost: \u201Cha..okay..\u201D"
+  - 'Emily: Ehm yeah, I guess, I just made it through the first guard frog.'
+  - "Ghost: \u201CHa... Okay...\u201D"
   - ...
   - 'Emily: Is everything okay with you? You seem to be standing here for a while
     already.'
@@ -29370,7 +29371,7 @@ MonoBehaviour:
   answer_choices:
   - One in four
   - One in ten
-  - One out of a hundred
+  - One in a hundred
   conclusion_right:
   - Very good! Never forget, you are not alone with your problems!
   conclusion_wrong:
@@ -35700,14 +35701,14 @@ MonoBehaviour:
   - But I managed to deal with it and understand what I had. Do you know why you
     are here? What is troubling you?
   - 'Emily: ...'
-  - I understand, it's not easy to talk about your problems. Especially with a stranger...
-    Courage girl, I just want to help you.
+  - 'Tom: I understand, it''s not easy to talk about your problems. Especially with
+    a stranger... Courage, girl, I just want to help you.'
   - 'Emily: I find it hard to put into words. It all just feels bad. I don''t want
     to get up anymore, everything is too hard for me and I''m too stupid for anything.'
-  - 'Tom: Emily you are not stupid! But what you''re telling me reminds me a lot
+  - 'Tom: Emily, you are not stupid! But what you''re telling me reminds me a lot
     of my old self.'
-  - I also felt a depressed, depressive mood. I felt a lack of drive and felt tired.
-    Feelings of guilt and worthlessness have also not been uncommon there.
+  - I was also in a depressive mood. I felt a lack of drive and felt tired. Feelings
+    of guilt and worthlessness have also not been uncommon back then.
   - It also sounds like you feel worthless yourself. Is that true?
   - "Emily: Yes... but I understand what you're getting at. And you seem to be right.
     I had a talk with the school psychologist this morning and she told me that I
@@ -38383,16 +38384,16 @@ MonoBehaviour:
   standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   idxs_of_sents_with_standard_font: 030000000500000007000000
   sentences:
-  - 'Turtle: oh ..'
-  - "Turtle: ...argg\u2026"
+  - 'Turtle: Oh...'
+  - "Turtle:... Argg\u2026"
   - 'Turtle: Oh you can''t scare me like that!'
   - 'Emily: Sorry, is everything okay?'
-  - 'Turtle: No, it''s so dark here and I feel so helpless. I am lost..as always..and
-    my talisman is gone.'
-  - 'Emily: Oh..did you lose it here in the cave?'
+  - 'Turtle: No, it''s so dark here and I feel so helpless. I am lost... as always...
+    and my talisman is gone.'
+  - 'Emily: Oh no, did you lose it here in the cave?'
   - 'Turtle: Yes, can you find it for me?'
   - 'Emily: Sure, I''ll help you. I search for it.'
-  - 'Turtle: thank you.. *shiver* '
+  - 'Turtle: Thank you... *shiver* '
   answer_choices: []
   conclusion_right: []
   conclusion_wrong: []
@@ -38513,7 +38514,8 @@ MonoBehaviour:
   standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   idxs_of_sents_with_standard_font: 
   sentences:
-  - 'Turtle: oh you found my talisman!'
+  - 'Turtle: Oh, you found my talisman. Thank you so much!'
+  - 'Emily: No problem. Happy to help you. Be safe!'
   answer_choices: []
   conclusion_right: []
   conclusion_wrong: []
