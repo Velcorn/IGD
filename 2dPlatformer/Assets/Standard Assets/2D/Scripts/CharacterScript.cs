@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 #pragma warning disable 649
 namespace UnityStandardAssets._2D
@@ -27,6 +28,7 @@ namespace UnityStandardAssets._2D
 		private string movement = "enableMovement";
 		private UnityEngine.UI.Image ActionKeyBackgroundImage;       
 		private TextMeshProUGUI ActionKeyTextMesh;
+		private bool overlapExit = false;
 
 		private void Awake()
 		{
@@ -60,6 +62,11 @@ namespace UnityStandardAssets._2D
 				ActionKeyBackgroundImage.enabled = true;
 				ActionKeyTextMesh.enabled = true;
 			}
+			if(collider.gameObject.name=="Exit"){
+				ActionKeyBackgroundImage.enabled = true;
+				ActionKeyTextMesh.enabled = true;
+				overlapExit = true;
+			}
 		}
 
 		private void OnTriggerExit2D(Collider2D collider){
@@ -78,7 +85,7 @@ namespace UnityStandardAssets._2D
 
 		private void FixedUpdate()
 		{
-			if(overlapCharacter == null){
+			if(overlapCharacter == null && overlapExit == false){
 				if(ActionKeyBackgroundImage != null)
 				{
 					ActionKeyBackgroundImage.enabled = false;
@@ -197,6 +204,10 @@ namespace UnityStandardAssets._2D
 				{
 					movement = ts.interaction(overlapCharacter);
 				}
+			}
+			if (overlapExit == true)
+			{
+				SceneManager.LoadScene("Level2");
 			}
 		}
 
