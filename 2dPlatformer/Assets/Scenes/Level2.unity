@@ -20231,7 +20231,7 @@ MonoBehaviour:
   standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   idxs_of_sents_with_standard_font: 
   sentences:
-  - 'Selene: You did well, Emily! '
+  - 'Selene: Hello again, Emily'
   - 'Selene: Welcome to the Downearth.'
   - 'Selene: I''ve noticed you''ve been feeling pretty down lately, so I''ve brought
     you here so you can learn to feel better!'
