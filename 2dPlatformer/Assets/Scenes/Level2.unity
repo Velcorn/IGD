@@ -3590,11 +3590,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4651710677713866823, guid: 94018c6bd17ad6b41bc52362c48fa039, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 299.7
+      value: -18.54
       objectReference: {fileID: 0}
     - target: {fileID: 4651710677713866823, guid: 94018c6bd17ad6b41bc52362c48fa039, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 39.9
+      value: -1.19
       objectReference: {fileID: 0}
     - target: {fileID: 4651710677713866823, guid: 94018c6bd17ad6b41bc52362c48fa039, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9476,8 +9476,6 @@ GameObject:
   - component: {fileID: 728765873}
   - component: {fileID: 728765872}
   - component: {fileID: 728765871}
-  - component: {fileID: 728765870}
-  - component: {fileID: 728765869}
   - component: {fileID: 728765868}
   m_Layer: 7
   m_Name: Turtle
@@ -9514,52 +9512,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
---- !u!114 &728765869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 728765866}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TextScript_index: 2
-  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
-  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  idxs_of_sents_with_standard_font: 
-  sentences:
-  - 'Turtle: oh you found my talisman!'
-  answer_choices: []
-  conclusion_right: []
-  conclusion_wrong: []
-  correct_answer_index: 0
-  reaction_script: {fileID: 728765868}
---- !u!114 &728765870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 728765866}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TextScript_index: 1
-  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
-  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  idxs_of_sents_with_standard_font: 
-  sentences:
-  - "Turtle: oh\u2026Where is my talisman?"
-  answer_choices: []
-  conclusion_right: []
-  conclusion_wrong: []
-  correct_answer_index: 0
-  reaction_script: {fileID: 728765868}
 --- !u!114 &728765871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9575,18 +9527,9 @@ MonoBehaviour:
   TextScript_index: 0
   character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
   standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  idxs_of_sents_with_standard_font: 030000000500000007000000
+  idxs_of_sents_with_standard_font: 
   sentences:
-  - 'Turtle: oh ..'
-  - "Turtle: ...argg\u2026"
-  - 'Turtle: Oh you can''t scare me like that!'
-  - 'Emily: Sorry, is everything okay?'
-  - 'Turtle: No, it''s so dark here and I feel so helpless. I am lost..as always..and
-    my talisman is gone.'
-  - 'Emily: Oh..did you lose it here in the cave?'
-  - 'Turtle: Yes, can you find it for me?'
-  - 'Emily: Sure, I''ll help you. I search for it.'
-  - 'Turtle: thank you.. *shiver* '
+  - 'Turtle: Hey! Thanks again! I will accept help from now on!'
   answer_choices: []
   conclusion_right: []
   conclusion_wrong: []
@@ -12434,7 +12377,6 @@ GameObject:
   - component: {fileID: 1007831929}
   - component: {fileID: 1007831928}
   - component: {fileID: 1007831927}
-  - component: {fileID: 1007831926}
   - component: {fileID: 1007831925}
   - component: {fileID: 1007831924}
   m_Layer: 7
@@ -12498,30 +12440,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
---- !u!114 &1007831926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007831922}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TextScript_index: 1
-  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
-  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  idxs_of_sents_with_standard_font: 0100000004000000070000000a0000000d0000000f0000001100000014000000
-  sentences:
-  - 'Gilbert: Thank you for your kindness, now I have found the courage to continue.
-    Hurry up now, see you at the finish!'
-  answer_choices: []
-  conclusion_right: []
-  conclusion_wrong: []
-  correct_answer_index: 0
-  reaction_script: {fileID: 1007831925}
 --- !u!114 &1007831927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12537,38 +12455,9 @@ MonoBehaviour:
   TextScript_index: 0
   character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
   standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  idxs_of_sents_with_standard_font: 0100000004000000070000000a0000000b0000000d0000000f0000001100000014000000
+  idxs_of_sents_with_standard_font: 
   sentences:
-  - 'Ghost: Oh, you have to go through this too?'
-  - 'Emily: Ehm yea I guess, I just made it through the first guard-frog.'
-  - "Ghost: \u201Cha..okay..\u201D"
-  - ...
-  - 'Emily: Is everything okay with you? You seem to be standing here for a while
-    already.'
-  - 'Ghost: ...'
-  - I don't want to keep playing these stupid games...I just want it all to stop.
-  - 'Emily: Hmm I can understand that. I also do not have such a desire for it here.'
-  - 'Ghost: No you don''t understand me. I don''t want anything anymore. '
-  - "I just want to go to bed and never wake up again. I don't have the strength,
-    just nothing\u2026"
-  - 'Emily: Oh..but I do, I understand you already..I''m here for a reason..I''m
-    not feeling so well either..'
-  - But it seems like we really have no choice but to move on. How long have you
-    been in here?
-  - 'Ghost: For a long time..but it''s just too much for me.'
-  - 'Emily: Come on..you''ve come a long way..me too - we''ve both come a long way!'
-  - 'Ghost: Hmm..'
-  - 'Emily: Otherwise, do you want to try it together?  Don''t give up on yourself,
-    you seem really nice! What is your name?'
-  - 'Ghost: Hm..thanks you are also very kind. Gilbert, how about you?'
-  - 'Emily: I''m Emily! Nice to meet you!'
-  - 'Gilbert: Haha thanks. That helped somehow. Okay Emily, let''s give it a try
-    then. I want to find you back at the finish line first though.'
-  - "I'll see you there okay? To a race?\u201D"
-  - 'Emily: Haha okay, sounds good. It was really nice to meet you. And now I have
-    something to look forward to at the end. See you later Gilbert!'
-  - 'Gilbert: Me too, see you there! Go ahead, you''ll need the head start - don''t
-    worry, I''ll catch up with you in a minute!'
+  - 'Gilbert: Ha! Told you I''d be here first!'
   answer_choices: []
   conclusion_right: []
   conclusion_wrong: []
@@ -13596,7 +13485,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074780078}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 314.9, y: 42.5, z: 0}
+  m_LocalPosition: {x: -28.2, y: 53.7, z: 0}
   m_LocalScale: {x: 5.5, y: 5.5, z: 5.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -14018,6 +13907,14 @@ PrefabInstance:
     - target: {fileID: 5724718436903150637, guid: 560222ad2c43ca14ab0d0dbfe69042d7, type: 3}
       propertyPath: m_Name
       value: rock_green (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951252743380544742, guid: 560222ad2c43ca14ab0d0dbfe69042d7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[28].x
+      value: -1.0614073
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951252743380544742, guid: 560222ad2c43ca14ab0d0dbfe69042d7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[28].y
+      value: 0.1792633
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 560222ad2c43ca14ab0d0dbfe69042d7, type: 3}
@@ -17262,7 +17159,6 @@ GameObject:
   - component: {fileID: 1257695086}
   - component: {fileID: 1257695085}
   - component: {fileID: 1257695084}
-  - component: {fileID: 1257695083}
   m_Layer: 7
   m_Name: MaskGuy
   m_TagString: Untagged
@@ -17285,31 +17181,6 @@ Transform:
   m_Father: {fileID: 899341555}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1257695083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257695081}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TextScript_index: 2
-  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
-  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  idxs_of_sents_with_standard_font: 0100000004000000060000000a0000000e000000
-  sentences:
-  - 'Tom: You may feel loss of interest and joylessness, but don''t give up on yourself.
-    The future will be fine. You will be able to find the joy of life again - Just
-    like me.'
-  answer_choices: []
-  conclusion_right: []
-  conclusion_wrong: []
-  correct_answer_index: 1
-  reaction_script: {fileID: 1257695085}
 --- !u!114 &1257695084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17325,38 +17196,9 @@ MonoBehaviour:
   TextScript_index: 0
   character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
   standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  idxs_of_sents_with_standard_font: 0100000004000000060000000a0000000e000000
+  idxs_of_sents_with_standard_font: 
   sentences:
-  - 'Shaman: Hey you! Don''t worry, I''m nicer than I look. What''s your name?'
-  - 'Emily: I am Emily. Who are you? What are you doing in this dark place?'
-  - 'Shaman: Well, my name is Tom. I was once here for the same reason as you: I
-    had my problems.'
-  - But I managed to deal with it and understand what I had. Do you know why you
-    are here? What is troubling you?
-  - 'Emily: ...'
-  - I understand, it's not easy to talk about your problems. Especially with a stranger...
-    Courage girl, I just want to help you.
-  - 'Emily: I find it hard to put into words. It all just feels bad. I don''t want
-    to get up anymore, everything is too hard for me and I''m too stupid for anything.'
-  - 'Tom: Emily you are not stupid! But what you''re telling me reminds me a lot
-    of my old self.'
-  - I also felt a depressed, depressive mood. I felt a lack of drive and felt tired.
-    Feelings of guilt and worthlessness have also not been uncommon there.
-  - It also sounds like you feel worthless yourself. Is that true?
-  - "Emily: Yes... but I understand what you're getting at. And you seem to be right.
-    I had a talk with the school psychologist this morning and she told me that I
-    could be depressed\u2026"
-  - 'Tom: Ah, okay. There are many symptoms of depression such as loss of interest
-    and joylessness - The things you''re feeling right now..I''ve felt those too.'
-  - You may feel helplessness, worthlessness and guilt. And think that the future
-    will only end badly and everything is hopeless. But it is not hopeless!
-  - I was able to free myself from these thoughts and feelings. I am well again and
-    today I am there for others - Like for you!
-  - 'Emily: ...'
-  - 'Tom: Don''t give up on yourself. The future will be fine. You will be able to
-    find the joy of life again - Just like me.'
-  - First, this cave will steer you on the right path. Try to get past the frog first.
-    I believe in you!
+  - 'Tom: It''s good to see you again. I hope you make the right decision!'
   answer_choices: []
   conclusion_right: []
   conclusion_wrong: []
@@ -20352,7 +20194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489701727}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.9, y: 3.27, z: 0}
+  m_LocalPosition: {x: -25.6, y: 48.3, z: 0}
   m_LocalScale: {x: 4.6115274, y: 7.3151937, z: 0.75}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -20620,6 +20462,14 @@ PrefabInstance:
     - target: {fileID: 5724718436903150637, guid: 560222ad2c43ca14ab0d0dbfe69042d7, type: 3}
       propertyPath: m_Name
       value: rock_green (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951252743380544742, guid: 560222ad2c43ca14ab0d0dbfe69042d7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[22].x
+      value: -0.24345729
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951252743380544742, guid: 560222ad2c43ca14ab0d0dbfe69042d7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[22].y
+      value: 0.6686109
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 560222ad2c43ca14ab0d0dbfe69042d7, type: 3}
@@ -21049,7 +20899,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1522646111}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 267.5, y: 36.2, z: 0}
+  m_LocalPosition: {x: -28.1, y: 52.4, z: 0}
   m_LocalScale: {x: 5.5, y: 5.5, z: 5.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -22209,6 +22059,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock_green (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6951252743380544742, guid: 560222ad2c43ca14ab0d0dbfe69042d7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[9].x
+      value: 1.2217963
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951252743380544742, guid: 560222ad2c43ca14ab0d0dbfe69042d7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[9].y
+      value: 0.5614843
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951252743380544742, guid: 560222ad2c43ca14ab0d0dbfe69042d7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[10].x
+      value: 1.0038376
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951252743380544742, guid: 560222ad2c43ca14ab0d0dbfe69042d7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[10].y
+      value: 0.49704248
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951252743380544742, guid: 560222ad2c43ca14ab0d0dbfe69042d7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[12].x
+      value: 0.8001424
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951252743380544742, guid: 560222ad2c43ca14ab0d0dbfe69042d7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[12].y
+      value: 0.50592613
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 560222ad2c43ca14ab0d0dbfe69042d7, type: 3}
 --- !u!1 &1603042638
@@ -22240,7 +22114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603042638}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 161.32, y: 14, z: 0}
+  m_LocalPosition: {x: -27.6, y: 46.7, z: 0}
   m_LocalScale: {x: 4.31035, y: 3.9539504, z: 5.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -22870,7 +22744,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635808182}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 127.6, y: 15.5, z: 0}
+  m_LocalPosition: {x: -31.4, y: 50, z: 0}
   m_LocalScale: {x: 5.5, y: 5.5, z: 5.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -23641,7 +23515,6 @@ GameObject:
   - component: {fileID: 1678863523}
   - component: {fileID: 1678863522}
   - component: {fileID: 1678863521}
-  - component: {fileID: 1678863520}
   m_Layer: 7
   m_Name: TalkingBat
   m_TagString: Untagged
@@ -23664,30 +23537,6 @@ Transform:
   m_Father: {fileID: 899341555}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1678863520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678863518}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af16fa9753177cf688d5e8ac3fcbcf12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TextScript_index: 2
-  character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
-  standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  idxs_of_sents_with_standard_font: 
-  sentences:
-  - 'Michael: Remember, you are not alone with those feelings. Many people struggle
-    with them. About one in four people are living with a mental disorder.'
-  answer_choices: []
-  conclusion_right: []
-  conclusion_wrong: []
-  correct_answer_index: 0
-  reaction_script: {fileID: 1678863522}
 --- !u!114 &1678863521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23703,20 +23552,9 @@ MonoBehaviour:
   TextScript_index: 0
   character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
   standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  idxs_of_sents_with_standard_font: 010000000300000005000000
+  idxs_of_sents_with_standard_font: 
   sentences:
-  - 'Bat: Hello, you. I am Michael, the bat.'
-  - 'Emily: Hi, Michael, I''m Emily. It''s strange to talk to a bat.'
-  - 'Michael: Oh, don''t worry, I don''t bite. Many who wake up here are frightened.'
-  - 'Emily: Hmm, yes. I must admit it was pretty scary at first.'
-  - 'Michael: I''m sorry, I hope you''re a bit better now. Why do you think you''ve
-    been brought here?'
-  - 'Emily: I don''t really know... Life just feels overwhelming, like everything
-    is too much. School is a burden. The last couple of days I couldn''t even get
-    out of bed... Why am I even telling you all of this...'
-  - 'Michael: Hey, hey, don''t worry. You are not alone with those feelings. Many
-    people struggle with them. About one in four people are living with a mental
-    disorder, with anxiety and depressive disorders being the most common! '
+  - 'Michael: I knew you''d make it this far! We have been waiting for you.'
   answer_choices: []
   conclusion_right: []
   conclusion_wrong: []
@@ -29102,7 +28940,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4343330317648296665, guid: 937a88c7d55b1c04c82c619e73ec6421, type: 3}
       propertyPath: m_SortingLayerID
