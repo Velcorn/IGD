@@ -70,15 +70,21 @@ namespace UnityStandardAssets._2D
 		}
 
 		private void OnTriggerExit2D(Collider2D collider){
-			if(collider.gameObject.layer==LayerMask.NameToLayer(m_PlatformsLayer)){
-				overlapPlatform = false;
-			}
-			if(collider.gameObject.layer==LayerMask.NameToLayer(m_CharactersLayer)){
-				TextScript ts = overlapCharacter.GetComponent<TextScript>();
-				ts.resetAndHideAll();
-				overlapCharacter = null;
-				ActionKeyBackgroundImage.enabled = false;
-				ActionKeyTextMesh.enabled = false;
+			if(collider.gameObject!=null)
+			{
+				if(collider.gameObject.layer==LayerMask.NameToLayer(m_PlatformsLayer)){
+					overlapPlatform = false;
+				}
+				if(collider.gameObject.layer==LayerMask.NameToLayer(m_CharactersLayer)){
+					TextScript ts = overlapCharacter.GetComponent<TextScript>();
+					ts.resetAndHideAll();
+					overlapCharacter = null;
+					ActionKeyBackgroundImage.enabled = false;
+					ActionKeyTextMesh.enabled = false;
+				}
+				if(collider.gameObject.name=="Exit"){
+					overlapExit = false;
+				}
 			}
 		}
 

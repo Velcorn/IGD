@@ -14,6 +14,7 @@ public class ReactionScript : MonoBehaviour
 	private GameObject turtle;
 	private GameObject talisman;
 	private GameObject frog_2;
+	private GameObject pig;
 
 	private Animator anim;
 	public static Dictionary<GameObject, int> current_state;
@@ -27,6 +28,7 @@ public class ReactionScript : MonoBehaviour
 		turtle = GameObject.Find("Turtle");
 		talisman = GameObject.Find("Gegenstand");
 		frog_2 = GameObject.Find("NinjaFrog_2");
+		pig = GameObject.Find("GreenPig");
 
 		current_state = new Dictionary<GameObject, int>(){
 			{frog, 0},
@@ -35,6 +37,7 @@ public class ReactionScript : MonoBehaviour
 			{ghost, 0},
 			{turtle, 0},
 			{talisman, 0},
+			{pig,0},
 			{frog_2,0}
 		};
 
@@ -84,6 +87,14 @@ public class ReactionScript : MonoBehaviour
 					enableTextScriptWithIndexForCharacter(turtle, 1);
 					enableTextScriptWithIndexForCharacter(talisman, 1);
 				}
+				else if (gameObject == pig)
+				{
+					enableTextScriptWithIndexForCharacter(pig,1);
+					if(current_state[frog_2]==4)
+					{
+						enableTextScriptWithIndexForCharacter(frog_2, 5);
+					}
+				}
 			}
 			if (reacting_to == "correct"){
 			}
@@ -103,10 +114,6 @@ public class ReactionScript : MonoBehaviour
 						Destroy(talisman.GetComponent<TextScript>());
 						Destroy(talisman);
 						enableTextScriptWithIndexForCharacter(turtle, 2);
-						if(current_state[frog_2]==2)
-						{
-							enableTextScriptWithIndexForCharacter(frog_2, 3);
-						}
 					}
 				}
 			}
@@ -167,6 +174,13 @@ public class ReactionScript : MonoBehaviour
 		{
 			if (reacting_to == "talked")
 			{
+				if(gameObject == turtle)
+				{
+					if(current_state[frog_2]==2)
+					{
+						enableTextScriptWithIndexForCharacter(frog_2, 3);
+					}
+				}
 			}
 			if (reacting_to == "correct")
 			{
@@ -188,8 +202,14 @@ public class ReactionScript : MonoBehaviour
 					boxCollider.enabled = false;
 				}
 				if(gameObject == frog_2){
-					BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
-					boxCollider.enabled = false;
+					if (current_state[pig]>=1)
+					{
+						enableTextScriptWithIndexForCharacter(frog_2,5);
+					}
+					else
+					{
+						enableTextScriptWithIndexForCharacter(frog_2,4);
+					}
 				}
 			}
 			else if (reacting_to == "wrong")
@@ -212,6 +232,31 @@ public class ReactionScript : MonoBehaviour
 					if (Frog_2TeleportTarget2)
 					{
 						player.transform.position = Frog_2TeleportTarget2.transform.position;
+					}
+					else
+					{
+						Debug.Log("teleport target not found");
+					}
+				}
+			}
+		}
+		if (reaction_index == 5)
+		{
+			if (reacting_to == "correct")
+			{
+				if(gameObject == frog_2){
+					BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
+					boxCollider.enabled = false;
+				}
+			}
+			else if (reacting_to == "wrong")
+			{
+				if (gameObject == frog_2)
+				{
+					GameObject Frog_2TeleportTarget3 = GameObject.Find("Frog_2TeleportTarget3");
+					if (Frog_2TeleportTarget3)
+					{
+						player.transform.position = Frog_2TeleportTarget3.transform.position;
 					}
 					else
 					{
