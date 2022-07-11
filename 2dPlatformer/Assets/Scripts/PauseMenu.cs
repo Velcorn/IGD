@@ -7,6 +7,11 @@ public class PauseMenu : MonoBehaviour
 {
     public bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    
+    void Start()
+    {
+        Cursor.visible = false;
+    }
 
     void Update()
     {
@@ -25,6 +30,7 @@ public class PauseMenu : MonoBehaviour
     
     void Pause()
     {
+        Cursor.visible = true;
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
@@ -32,6 +38,7 @@ public class PauseMenu : MonoBehaviour
     
     public void Resume()
     {
+        Cursor.visible = false;
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -39,6 +46,7 @@ public class PauseMenu : MonoBehaviour
     
     public void Restart()
     {
+        Cursor.visible = false;
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

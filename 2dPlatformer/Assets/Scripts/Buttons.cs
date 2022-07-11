@@ -7,7 +7,7 @@ public class Buttons : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene("Dialogue0");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     
     public void Quit()

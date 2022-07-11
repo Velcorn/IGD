@@ -14,6 +14,7 @@ public class Dialogue : MonoBehaviour
     
     void Start()
     {
+        Cursor.visible = false;
         textDisplay.text = "";
         StartDialogue();
     }
@@ -62,7 +63,7 @@ public class Dialogue : MonoBehaviour
             gameObject.SetActive(false);
             if (Input.GetKey(KeyCode.Space))
             {
-                SceneManager.LoadScene("Timer0");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
     }

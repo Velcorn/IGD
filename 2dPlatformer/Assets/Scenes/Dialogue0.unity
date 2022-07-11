@@ -396,6 +396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 551866969}
   sentences:
+  - '???: Hey, you, you''re finally awake. I was getting worried. What is your name?'
   - 'Controls:
 
     Space - Advance dialogue + Jump
@@ -406,7 +407,6 @@ MonoBehaviour:
     S - Select answer
 
     E- Interact + Confirm choice'
-  - '???: Hey, you, you''re finally awake. I was getting worried. What is your name?'
   - 'Emily: I-I''m Emily... W-who are you? W-where am I?'
   - '???: You fell into this magical well. My name is Selene and I will guide you
     through your journey and help you face your fears!'
