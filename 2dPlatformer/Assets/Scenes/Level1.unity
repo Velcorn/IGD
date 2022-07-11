@@ -29870,7 +29870,7 @@ MonoBehaviour:
   TextScript_index: 0
   character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
   standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  idxs_of_sents_with_standard_font: 01000000030000000500000007000000
+  idxs_of_sents_with_standard_font: 0100000003000000050000000700000009000000
   sentences:
   - 'Green Pig: Hey..!'
   - "Emily: Hi, I am Emily, what's your name? You seem to be very young, too young
@@ -29884,8 +29884,8 @@ MonoBehaviour:
     two, in fact! So I am not weird!'
   - 'Emily: Oh, I didn''t mean it that way, sorry. It''s very strong and brave of
     you!'
-  - 'Pete: Thank you. I think you are very brave as well. I wish you all the best
-    on your way.'
+  - 'Pete: I hope you also find what you need. Bye!'
+  - 'Emily: Bye? Bye!'
   answer_choices: []
   conclusion_right: []
   conclusion_wrong: []
