@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ReactionScript : MonoBehaviour
 {
@@ -75,7 +76,11 @@ public class ReactionScript : MonoBehaviour
 				{
 					Destroy(selene.GetComponent<TextScript>());
 					anim.Play("seleneExplosionAnimation");
-					Destroy(selene, 1.0f);	
+					Destroy(selene, 1.0f);
+					if (SceneManager.GetActiveScene().name == "EndScene")
+					{
+			            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                    }
 				}
 				else if (gameObject == ghost)
 				{

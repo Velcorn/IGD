@@ -385,7 +385,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -506,31 +506,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 2097738614}
   sentences:
-  - 'Controls:
+  - 'Thank you for playing our game!
 
-    Space - Advance dialogue + Jump
+'
+  - 'If you are struggling with mental health issues yourself and live in Germany,
+    the following websites might be helpful for you:
 
-    A, D - Move left/right
+    https://www.therapie.de/psyche/info/
 
-    W,
-    S - Select answer
+    https://www.deutsche-depressionshilfe.de/depression-infos-und-hilfe/behandlung/psychotherapeutische-behandlung
 
-    E- Interact + Confirm choice'
-  - '???: Hey, you, you''re finally awake. I was getting worried. What is your name?'
-  - 'Emily: I-I''m Emily... W-who are you? W-where am I?'
-  - '???: You fell into this magical well. My name is Selene and I will guide you
-    through your journey and help you face your fears!'
-  - 'Emily: I don''t want to be here. This has to be a dream. Please wake up, please
-    wake up!'
-  - 'Emily: *breathing rapidly, heartrate increasing*'
-  - 'Selene: Hey, hey, everything is going to be okay. Here is an exercise called
-    4-7-8 breathing to help you calm down...'
-  - 1. First, let your lips part. Make a whooshing sound, exhaling completely through
-    your mouth
-  - 2. Next, close your lips, inhaling silently through your nose for four seconds
-  - 3. Then, for seven seconds, hold your breath
-  - 4. Make another whooshing exhale from your mouth for eight seconds
-  - "Selene: Let's try it together \n\n(Hold \"Space\" to count down)"
+    https://www.gesundheitsinformation.de/wege-zur-psychotherapie-wo-gibt-es-hilfe.html'
+  - 'This game was brought to you by: Klaas, Enrico, Gopal, and Jan!'
   textSpeed: 0.05
 --- !u!114 &2122016327
 MonoBehaviour:
@@ -545,7 +532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

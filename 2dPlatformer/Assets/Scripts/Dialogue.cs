@@ -63,7 +63,14 @@ public class Dialogue : MonoBehaviour
             gameObject.SetActive(false);
             if (Input.GetKey(KeyCode.Space))
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+				if (SceneManager.GetActiveScene().name == "Credits")
+				{
+					SceneManager.LoadScene("MainMenu");
+                }
+                else
+                {
+					SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+				}
             }
         }
     }
