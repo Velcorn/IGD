@@ -12538,7 +12538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492796492}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 112.21, y: 74.75, z: 0}
+  m_LocalPosition: {x: 112.1, y: 74.9, z: 0}
   m_LocalScale: {x: 0.8806494, y: 0.9258546, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29942,11 +29942,11 @@ MonoBehaviour:
   standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   idxs_of_sents_with_standard_font: 0100000003000000050000000700000009000000
   sentences:
-  - 'Green Pig: Hey..!'
-  - "Emily: Hi, I am Emily, what's your name? You seem to be very young, too young
-    to be here\u201D"
+  - 'Green Pig: Hey...!'
+  - 'Emily: Hi, I am Emily, what''s your name? You seem to be very young, a bit too
+    young to be here.'
   - 'Green Pig: I am not too young, I am already 11!'
-  - "Emily: Wow..sorry you are already here at this age\u2026.so what is your name?"
+  - "Emily: Wow... sorry you are already here at this age\u2026 so what is your name?"
   - 'Green Pig: My name is Pete. It''s all right. I now understand what is bothering
     me and my parents will help me.'
   - 'Emily: I see, sounds great!'
@@ -38727,14 +38727,14 @@ MonoBehaviour:
   idxs_of_sents_with_standard_font: 030000000500000007000000
   sentences:
   - 'Turtle: Oh...'
-  - "Turtle:... Argg\u2026"
-  - 'Turtle: Oh you can''t scare me like that!'
+  - "...Argg\u2026"
+  - Oh you can't scare me like that!
   - 'Emily: Sorry, is everything okay?'
   - 'Turtle: No, it''s so dark here and I feel so helpless. I am lost... as always...
     and my talisman is gone.'
   - 'Emily: Oh no, did you lose it here in the cave?'
   - 'Turtle: Yes, can you find it for me?'
-  - 'Emily: Sure, I''ll help you. I search for it.'
+  - 'Emily: Sure, I''ll search for it!'
   - 'Turtle: Thank you... *shiver* '
   answer_choices: []
   conclusion_right: []
@@ -38854,14 +38854,14 @@ MonoBehaviour:
   TextScript_index: 2
   character_font: {fileID: 11400000, guid: 9db6557fcbc2faf3abe599fb4032a0d4, type: 2}
   standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  idxs_of_sents_with_standard_font: 0200000004000000
+  idxs_of_sents_with_standard_font: 0100000003000000
   sentences:
   - 'Turtle: Ah there you are! You know, this belonged to my mother a long time ago.
     It reminds me of her and calms me.'
   - "Emily: No problem! It\u2019s nice that it helps you."
-  - 'Turtle: Yes, I have great fears. Especially about  what is in front of you.
-    About the future.'
-  - 'Emily: I can feel that..'
+  - 'Turtle: Yes, I have great fears. Especially about what is in front of me. About
+    the future.'
+  - 'Emily: I can feel that...'
   - 'Turtle: Well, this item helps. I hope you can find something to calm you down
     too. Thanks again for your help!'
   answer_choices: []
@@ -38886,7 +38886,7 @@ MonoBehaviour:
   standard_font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   idxs_of_sents_with_standard_font: 
   sentences:
-  - "Turtle: oh\u2026Where is my talisman?"
+  - "Turtle: Oh\u2026 Where is my talisman?"
   answer_choices: []
   conclusion_right: []
   conclusion_wrong: []
